@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no, email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Import Flexible Script(High Priority) -->
+    <script src="../../dist/js/Flexible.js"></script>
+    <!-- Import Stylesheets -->
+    <link rel="stylesheet" href="../../dist/css/frozen.min.css">
+    <!--build:css-->
+    <link rel="stylesheet" href="../../VCv2/icovc/style.css" />
+    <link rel="stylesheet" href="../../VCv2/style/myorgs/myorgs.css" />
+    <!--endbuild-->
+    <title>管理员</title>
+</head>
+
+<body class="page-myorgs">
+    <!-- MainBD -->
+    <form class="form" action="">
+        <div class="item clearfix">
+            <div class="left">
+                <label for="time">请选择时间</label>
+            </div>
+            <div class="right">
+                <input id="time" type="time" />
+            </div>
+            <i class="ico-arrow"></i>
+        </div>
+        <div class="item clearfix">
+            <div class="left">
+                <label for="person">请选择时间</label>
+            </div>
+            <div class="right">
+                <select name="person123" id="person" required>
+                    <option value=""></option>
+                    <option value="赵二">赵二</option>
+                    <option value="钱三">钱三</option>
+                    <option value="孙四">孙四</option>
+                    <option value="周五">周五</option>
+                    <option value="吴六">吴六</option>
+                </select>
+            </div>
+            <i class="ico-arrow"></i>
+        </div>
+        <div class="wrap">
+            <input class="submit ui-border-radius" type="submit" value="帮他签到" />
+            <p> 请已管理员身份作为保证，该志愿者确实已经参与活动。如经核实发现舞弊现象，情节严重者封号处理！ </p>
+        </div>
+    </form>
+    <!-- Import Scripts -->
+    <script src="../../dist/js/zepto.min.js"></script>
+    <script src="../../dist/js/frozen.min.js"></script>
+</body>
+
+</html>

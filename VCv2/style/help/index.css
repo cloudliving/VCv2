@@ -1,0 +1,41 @@
+.hel-index {
+    background-color: #efeff4;
+}
+.hel-index .contain {
+    margin: 15px 0;
+
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #fff;
+}
+.hel-index .item {
+    margin: 0 10px 0 10px;
+    padding: 20px 10px 20px 0;
+
+    border-bottom: 1px solid #f0f0f0;
+}
+.hel-index .item:last-child {
+    border-bottom: none;
+}
+.hel-index .item p.title {
+    font-size: 15px;
+
+    margin-bottom: 6px;
+
+    color: #000;
+}
+.hel-index .item p {
+    font-size: 13px;
+    line-height: 23px;
+
+    color: #666;
+}
+.hel-index .item p span {
+    color: #fd8362;
+}
+.hel-index .item:first-child {
+    padding: 10px;
+}
+.hel-index .item:first-child .title {
+    margin-bottom: 0;
+}

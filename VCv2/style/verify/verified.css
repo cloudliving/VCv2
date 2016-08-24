@@ -1,0 +1,46 @@
+.ver-verified {
+    background-color: #efeff4;
+}
+.ver-verified input {
+            appearance: none;
+    -webkit-appearance: none;
+}
+.ver-verified .contain p {
+    position: relative;
+
+    margin-top: 15px;
+    padding: 15px 10px;
+
+    background-color: #fff;
+}
+.ver-verified .contain p span:nth-child(1) {
+    font-size: 15px;
+
+    position: absolute;
+    top: 16px;
+    left: 10px;
+
+    color: #333;
+}
+.ver-verified .contain p span:nth-child(2) {
+    font-size: 13px;
+
+    padding-left: 90px;
+
+    color: #666;
+}
+.ver-verified .modify {
+    font-size: 12px;
+
+    position: absolute;
+    top: 15px;
+    right: 10px;
+
+    width: 80px;
+    height: 25px;
+
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    background-color: #ff8362;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no, email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Import Flexible Script(High Priority) -->
+    <script src="../../dist/js/Flexible.js"></script>
+    <!-- Import Stylesheets -->
+    <link rel="stylesheet" href="../../dist/css/frozen.min.css">
+    <!-- build:css -->
+    <link rel="stylesheet" href="../../VCv2/icovc/style.css">
+    <link rel="stylesheet" href="../../VCv2/style/help/feedback.css">
+    <!-- endbuild -->
+    <title>意见反馈</title>
+</head>
+
+<body class="hel-feedback">
+    <!-- MainBD -->
+    <div class="contain">
+        <form action="">
+            <div class="suggestion">
+                <p>志愿之城的每一个进步，都离不开你的意见和建议:)</p>
+                <textarea name="" id="" placeholder="请输入反馈信息，大于15个字"></textarea>
+            </div>
+            <input type="text" class="contact" placeholder="请输入邮箱/手机号(选填，提供联系方式)">
+            <div class="submit">
+                <input type="button" value="提交">
+            </div>
+        </form>
+    </div>
+    <!-- Import Scripts -->
+    <script src="../../dist/js/zepto.min.js"></script>
+    <script src="../../dist/js/frozen.min.js"></script>
+    <script>
+    var $FeedBack = $('.suggestion textarea');
+    $FeedBack.keyup(function() {
+        var $Con = $FeedBack.val();
+        if ($Con == "") {
+            $('.submit input').css('backgroundColor', '#ccc');
+        } else {
+            $('.submit input').css('backgroundColor', '#fd8362');
+        }
+    });
+    </script>
+</body>
+
+</html>

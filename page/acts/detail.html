@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no, email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Import Flexible Script(High Priority) -->
+    <script src="../../dist/js/Flexible.js"></script>
+    <!-- Import Stylesheets -->
+    <link rel="stylesheet" href="../../dist/css/frozen.min.css">
+    <!--build:css-->
+    <link rel="stylesheet" href="../../VCv2/icovc/style.css" />
+    <link rel="stylesheet" href="../../VCv2/style/acts/acts.css" />
+    <!--endbuild-->
+    <title>活动详情</title>
+</head>
+
+<body class="page-acts page-detail">
+    <!-- MainBD -->
+    <!-- panel 活动面板-->
+    <div class="panel">
+        <h4 class="ui-nowrap ui-whitespace uk-">保利心语社区公益音乐培训辅导</h4>
+        <p class="time"><i class="ico-sec"></i>2015.12.29 07:12~2015.12.29 13:13</p>
+        <a href="javascript:" class="share">
+            <i class="ico-share"></i>
+        </a>
+    </div>
+    <!-- 活动信息及介绍 -->
+    <div class="ui-tab detail-tab">
+        <ul class="ui-tab-nav ui-border-b">
+            <li class="current">活动信息</li>
+            <li>活动介绍</li>
+        </ul>
+        <ul class="ui-tab-content" style="width:300%">
+            <li class="current page1">
+                <div class="list">
+                    <div class="item">
+                        <div class="left">活动地址</div>
+                        <div class="right"><em>保利心语社区21栋保利心语居委会</em></div>
+                    </div>
+                    <div class="item">
+                        <div class="left">已报名</div>
+                        <div class="right "><em class="highlight">20人</em></div>
+                    </div>
+                    <div class="item">
+                        <div class="left">活动状态</div>
+                        <div class="right "><em>报名中</em></div>
+                    </div>
+                    <div class="item">
+                        <div class="left">活动类别</div>
+                        <div class="right "><em>帮教助学</em></div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <div class="left">发起组织</div>
+                        <div class="right"><em>洪山区志愿者服务队</em></div>
+                    </div>
+                    <div class="item">
+                        <div class="left">现场联系人</div>
+                        <div class="right "><em>Lucky</em></div>
+                    </div>
+                    <div class="item">
+                        <div class="left">联系电话</div>
+                        <div class="right "><em>1234567890123</em></div>
+                    </div>
+                </div>
+            </li>
+            <li class="page2">
+                <div class="intro">
+                    这里是活动介绍，这里是活动介绍，这里是活动介绍，这里是活动介绍，这里是活动介绍，这里是活动介绍， 这里是活动介绍，这里是活动介绍，这里是活动介绍，这里是活动介绍，这里是活动介绍，这里是活动介绍， 这里是活动介绍，这里是活动介绍，
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="list" style="margin-bottom:10px;">
+        <a data-thick href="#" class="item">
+            <div class="left">打卡记录</div>
+            <div class="right"><em class="highlight">20人</em><i style='margin-left:3px;' class="ico-arrow offset-top"></i></div>
+        </a>
+        <!-- 注释的打卡提示 -->
+        <!--<p class="not-started">活动开始前20分钟到结束后10分钟内，都可以打卡</p>-->
+        <a data-thick href="#" class="item">
+            <div class="left">公益时间</div>
+            <div class="right"><em>增长中</em><i style='margin-left:3px;' class="ico-arrow offset-top"></i></div>
+        </a>
+    </div>
+    <!-- 底部按钮 -->
+    <div class="join clearfix">
+        <a class="ui-border-radius join-btn" href="#">我要加入</a>
+        <div class="wrap clearfix">
+            <a class="cancel ui-border-radius" href="#">已报名</a>
+            <a class="code ui-border-radius" href="#">扫描二维码</a>
+        </div>
+    </div>
+    <!-- 二维码遮罩 -->
+    <div class="shade code-shade">
+        <div class="container ui-border-radius">
+            <img src="../../VCv2/img/vcpic24.png" alt="" />
+            <ul>
+                <li>扫描打卡需要使用地理位置信息，请确保打开GPS</li>
+                <li>活动开始前扫描二维码签到打卡,活动结束后再次扫描签退打卡</li>
+                <li>你可以扫描其他参加此活动的同伴,打开的二维码打卡,也可以长按此二维码"识别图片"自行打卡</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Import Scripts -->
+    <script src="../../dist/js/zepto.min.js"></script>
+    <script src="../../dist/js/frozen.min.js"></script>
+    <script src='../../VCv2/script/thick.js'></script>
+    <script>
+
+    // 报名逻辑
+    $(function() {
+        var wrap = $('.join'),
+            join = wrap.find('.join-btn'),
+            hidden = wrap.find('.wrap'),
+            cancel = wrap.find('.cancel'),
+            code = wrap.find('.code'),
+            shade = $('.shade');
+
+
+        join.on('tap', function() {
+            $.tips({
+                content: "你已成功报名该活动!",
+                stayTime: 2000
+            });
+            join.hide();
+            hidden.fadeIn();
+        });
+
+
+        cancel.on('tap', function() {
+
+            var temp = $.dialog({
+                title: "云生活提示",
+                content: "是否取消报名",
+                button: ["确认", "取消"]
+            });
+            $('#dialogButton0').on('tap', function() {
+                $.tips({
+                    content: "你已取消报名!",
+                    stayTime: 2000
+                });
+
+    
+                hidden.hide();
+                join.fadeIn();
+            });
+        });
+
+        code.on('tap', function() {
+            shade.fadeIn();
+        });
+
+        shade.on('tap', function(e) {
+            if (e.target == this) {
+                $(this).fadeOut();
+            }
+        })
+    });
+
+    // 选项卡切换
+    window.addEventListener('load', function() {
+        var tab = new fz.Scroll('.ui-tab', {
+            role: 'tab'
+        });
+    })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no, email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Import Flexible Script(High Priority) -->
+    <script src="../../dist/js/Flexible.js"></script>
+    <!-- Import Stylesheets -->
+    <link rel="stylesheet" href="../../dist/css/frozen.min.css">
+    <!-- build:css -->
+    <link rel="stylesheet" href="../../VCv2/icovc/style.css">
+    <link rel="stylesheet" href="../../VCv2/style/verify/index.css">
+    <!-- endbuild -->
+    <title>实名认证</title>
+</head>
+
+<body class="ver-index">
+    <!-- MainBD -->
+    <div class="contain">
+        <form method="post" action="" class="group">
+            <div class="ui-form-item">
+                <label>姓名</label>
+                <input id="name" type="text" placeholder="请输入姓名">
+            </div>
+            <div class="ui-form-item">
+                <label>性别</label>
+                <div class="choose-sex">
+                    <label class="ui-radio">
+                        <input class="male" type="radio" name="sex" value="男" checked="checked">
+                    </label>
+                    <span>男</span>
+                    <label class="ui-radio">
+                        <input class="female" type="radio" name="sex" value="女">
+                    </label>
+                    <span>女<span>
+		    	</div>
+		    </div>
+		    <div class="ui-form-item">
+		    	<label>身份证号</label>
+				<input id="idcard" type="text" placeholder="请输入身份证号">
+		    </div>
+		    <div class="ui-form-item">
+		    	<label>手机号</label>
+				<input id="phonenum" type="text" placeholder="请输入手机号">
+                <input class="ver-code" type="button" value="发送验证码">
+		    </div>
+		    <div class="ui-form-item">
+		    	<label>验证码</label>
+				<input id="code" type="text" placeholder="请输入验证码">	
+			
+		    </div>	
+		    <div class="submit">
+		    	<input type="submit" value="提交">
+		    </div>
+    	</form>
+    </div>
+
+    <!-- Import Scripts -->
+    <script src="../../dist/js/zepto.min.js"></script>
+    <script src="../../dist/js/frozen.min.js"></script>
+    <script>
+    	function check() {
+        	var Name = $('#name').val();
+        	var IdCard = $('#idcard').val();
+	    	var PhoneNum = $('#phonenum').val();
+	    	if(Name != "" && IdCard !="" && PhoneNum != "") {
+    			$('.ver-code').css('backgroundColor','#fd8362');
+	    	}else {
+	    		$('.ver-code').css('backgroundColor','#ccc');
+	    		$('.submit input').css('backgroundColor','#ccc');
+	    	}
+        }
+        $('#name').bind('keyup',check);
+        $('#idcard').bind('keyup',check);
+        $('#phonenum').bind('keyup',check);
+        $('#code').keyup(function() {
+        	var Name = $('#name').val();
+        	var IdCard = $('#idcard').val();
+	    	var PhoneNum = $('#phonenum').val();
+	    	var Code = $('#code').val();
+	    	if(Name != "" && IdCard !="" && PhoneNum != "" && Code != "") {
+    			$('.submit input').css('backgroundColor','#fd8362');
+	    	}else {
+	    		$('.submit input').css('backgroundColor','#ccc');
+	    	}
+        });
+    </script>
+
+</body>
+</html>

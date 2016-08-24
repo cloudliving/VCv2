@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no, email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Import Flexible Script(High Priority) -->
+    <script src="../../dist/js/Flexible.js"></script>
+    <!-- Import Stylesheets -->
+    <link rel="stylesheet" href="../../dist/css/frozen.min.css">
+    <!-- build:css -->
+    <link rel="stylesheet" href="../../VCv2/style/push/index.css">
+    <!-- endbuild -->
+    <title>打卡抽奖</title>
+    <style>
+        .transition{
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transition-duration: 2s;
+            transition-duration: 2s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+        }
+    </style>
+</head>
+
+<body class="pus-index">
+    <!-- MainBD -->
+    <div class="flex-img">
+        <img src="../../VCv2/img/vcpic3.png">
+    </div>
+    <div class="block">
+        <p class="points">我的积分：100000</p>
+        <p class="chances">获得1次抽奖机会，本次抽奖消耗<span class="les">0</span>积分</p>
+        <div class="prize">
+            <img class="bot transition j-rotate-content" src="../../VCv2/img/vcpic25.png">
+            <img class="pin j-rotate-btn" src="../../VCv2/img/vcpic4.png">
+        </div>
+        <a href="###" class="goto">前往积分商城查看上述商品详情</a>
+        <p class="tip">中奖商品请于 "个人中心" ———— "我的兑换商品" 查看</p>
+    </div>
+    <div class="win">
+        <p class="tit">好运播报：</p>
+        <div class="box">
+            <p>恭喜为信号为xxxx的用户获得：周黑鸭500g一袋</p>
+            <p>恭喜为信号为xxxx的用户获得：周黑鸭500g二袋</p>
+            <p>恭喜为信号为xxxx的用户获得：周黑鸭500g三袋</p>
+            <p>恭喜为信号为xxxx的用户获得：周黑鸭500g四袋</p>
+        </div>
+    </div>
+    <!-- Import Scripts -->
+    <script src="../../dist/js/zepto.min.js"></script>
+    <script src="../../dist/js/frozen.min.js"></script>
+    <script src="../../VCv2/script/rotate.js"></script>
+    <script>
+    
+        rotate.on("rotate",function(e,args){
+
+            // 自定义事件元素，及参数
+            console.log(e);
+            console.log(args);
+
+            alert("This is callback")
+        })
+
+        rotate.init()
+
+    </script>
+</body>
+
+</html>

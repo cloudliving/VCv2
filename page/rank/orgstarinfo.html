@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no, email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Import Flexible Script(High Priority) -->
+    <script src="../../dist/js/Flexible.js"></script>
+    <!-- Import Stylesheets -->
+    <link rel="stylesheet" href="../../dist/css/frozen.min.css">
+    <!-- build:css -->
+    <link rel="stylesheet" href="../../VCv2/icovc/style.css">
+    <link rel="stylesheet" href="../../VCv2/style/rank/starinfo.css">
+    <!-- endbuild -->
+    <title>志愿组织之星</title>
+</head>
+
+<body class="ran-org">
+    <!-- MainBD -->
+    <div class="header clearfix">
+        <p>
+            <span>11月武汉市志愿组织之星</span>
+            <span class="ico-share"></span>
+        </p>
+    </div>
+    <div class="from">
+        <p class="tit">来自志愿之城</p>
+    </div>
+    <div class="block">
+        <div class="row">
+            <div class="box">
+                <div class="ava">
+                    <img src="../../VCv2/img/vcpic11.png">
+                    <div class="month">
+                        <img class="bot" src="../../VCv2/img/vcpic12.png">
+                        <i class="top">11月</i>
+                    </div>
+                </div>
+                <p class="name">马云</p>
+            </div>
+            <div class="box">
+                <div class="ava">
+                    <img src="../../VCv2/img/vcpic11.png">
+                    <div class="month">
+                        <img class="bot" src="../../VCv2/img/vcpic12.png">
+                        <i class="top">11月</i>
+                    </div>
+                </div>
+                <p class="name">马云马云马云马云马云马云马云马云马云马云马云马云</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box">
+                <div class="ava">
+                    <img src="../../VCv2/img/vcpic11.png">
+                    <div class="month">
+                        <img class="bot" src="../../VCv2/img/vcpic12.png">
+                        <i class="top">11月</i>
+                    </div>
+                </div>
+                <p class="name">马云</p>
+            </div>
+            <div class="box">
+                <div class="ava">
+                    <img src="../../VCv2/img/vcpic11.png">
+                    <div class="month">
+                        <img class="bot" src="../../VCv2/img/vcpic12.png">
+                        <i class="top">11月</i>
+                    </div>
+                </div>
+                <p class="name">马云</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box">
+                <div class="ava">
+                    <img src="../../VCv2/img/vcpic11.png">
+                    <div class="month">
+                        <img class="bot" src="../../VCv2/img/vcpic12.png">
+                        <i class="top">11月</i>
+                    </div>
+                </div>
+                <p class="name">马云</p>
+            </div>
+            <div class="box">
+                <div class="ava">
+                    <img src="../../VCv2/img/vcpic11.png">
+                    <div class="month">
+                        <img class="bot" src="../../VCv2/img/vcpic12.png">
+                        <i class="top">11月</i>
+                    </div>
+                </div>
+                <p class="name">马云</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box">
+                <div class="ava">
+                    <img src="../../VCv2/img/vcpic11.png">
+                    <div class="month">
+                        <img class="bot" src="../../VCv2/img/vcpic12.png">
+                        <i class="top">11月</i>
+                    </div>
+                </div>
+                <p class="name">马云马云马云马云马云马云马云马云马云马云马云马云马云马云马云马云马云</p>
+            </div>
+            <div class="box">
+                <div class="ava">
+                    <img src="../../VCv2/img/vcpic11.png">
+                    <div class="month">
+                        <img class="bot" src="../../VCv2/img/vcpic12.png">
+                        <i class="top">11月</i>
+                    </div>
+                </div>
+                <p class="name">马云</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box">
+                <div class="ava">
+                    <img src="../../VCv2/img/vcpic11.png">
+                    <div class="month">
+                        <img class="bot" src="../../VCv2/img/vcpic12.png">
+                        <i class="top">11月</i>
+                    </div>
+                </div>
+                <p class="name">马云</p>
+            </div>
+            <div class="box">
+                <div class="ava">
+                    <img src="../../VCv2/img/vcpic11.png">
+                    <div class="month">
+                        <img class="bot" src="../../VCv2/img/vcpic12.png">
+                        <i class="top">11月</i>
+                    </div>
+                </div>
+                <p class="name">马云</p>
+            </div>
+        </div>
+    </div>
+    <a href="###" class="ago ui-border-tb">查看往期</a>
+    <p class="copyright">最终解释权归武汉云智互联有限公司所有</p>
+    <!-- Import Scripts -->
+    <script src="../../dist/js/zepto.min.js"></script>
+    <script src="../../dist/js/frozen.min.js"></script>
+    <script>
+        // 对齐单元格 
+        $(function(){
+            $('.block .row').each(function(){
+                var boxs = $(this).find('.box'),
+                    h1 = boxs.eq(0).height(),
+                    h2 = boxs.eq(1).height(),
+                    maxh;
+
+                if ( h1!=h2 ) {
+                    if (h1>h2) {
+                        maxh = h1;
+                    } else {
+                        maxh = h2;
+                    }
+
+                    boxs.height(maxh);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

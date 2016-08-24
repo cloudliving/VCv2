@@ -1,0 +1,49 @@
+.poi-rule {
+    background-color: #efeff4;
+}
+.poi-rule .list {
+    position: relative;
+    background: #fff;
+    padding: 10px 15px 10px 30px;
+}
+.poi-rule .ico-coin {
+    position: absolute;
+    left: 8px;
+    top: 14   px;
+}
+.poi-rule .list+.list {
+    margin-top: 15px;
+}
+.poi-rule .title {
+    padding-bottom: 2px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.poi-rule table {
+    margin-top: 8px;
+    width: 100%;
+    font-size: 14px;
+}
+.poi-rule td {
+    width: 50%;
+    padding: 4px;
+}
+.poi-rule tr td:last-child {
+    padding-left: 5px;
+}
+.poi-rule .none {
+    border: none;
+}
+.poi-rule .caption {
+    background: #fff;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.poi-rule .ui-icon-warn {
+    display: inline-block;
+    color: #ff0000;
+}
+.poi-rule .explain {
+    text-align: center;
+    color: #878787;
+}

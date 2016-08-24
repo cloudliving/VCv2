@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no, email=no" name="format-detection">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- Import Flexible Script(High Priority) -->
+    <script src="../../dist/js/Flexible.js"></script>
+
+    <!-- Import Stylesheets -->
+    <link rel="stylesheet" href="../../dist/css/frozen.min.css">
+    <!-- build:css -->
+    <link rel="stylesheet" href="../../VCv2/icovc/style.css"/>
+    <link rel="stylesheet" href="../../VCv2/style/comment/my-cmt.css"/>
+    <!-- endbuild -->
+    <title>我的评论</title>
+</head>
+<body class="page-mycmt">
+<!-- MainBD -->
+
+<div class="mycmt-header bgfff">
+    <p class="bb pd-15-v">积极发表评论，让大家听到你们声音~评论送积分~</p>
+    <p class="pd-15-v">你一共发表了 <span class="highlight">10</span>个评论,收获了 <span class="highlight">12</span>个喜欢</p>
+</div>
+
+<div class="mycmt-list bgfff">
+    <p class="bb pd-15-v pd-10-l caption">我的评价记录</p>
+    <div class="pd-10-l bb">
+        <a href="" class="mycmt-item no-comment  pd-15-v bb clearfix">
+            <p class="content">你还没有发表评论.大家都想听到你的声音,快来吧~</p>
+            <p class="position"><i class="ico-act"></i>保利心语社区公益音乐培训辅导</p>
+            <span class="go-cmt">去写评论</span>
+        </a>
+        <a class="mycmt-item   pd-15-v bb clearfix" href="#">
+            <p class="name">名字</p>
+            <p class="timestamp">2015/11/05 18:12</p>
+            <p class="content">音乐活动真是好[/face01]啊音乐活动真是[/face02]好啊音乐活动真是好啊</p>
+            <p class="position"><i class="ico-act"></i>保利心语社区公益音乐培训辅导</p>
+            <span class="cmt-like">6<i class="ico-heart"></i></span>
+        </a>
+    </div>
+</div>
+
+
+
+
+<!-- Import Scripts -->
+<script src="../../dist/js/zepto.min.js"></script>
+<script src="../../dist/js/frozen.min.js"></script>
+<script>
+    $(function(){
+        transform()
+    });
+
+
+    // 转换表情, 每次上啦加载完后执行一次该函数
+    function transform(){
+        $('.content').not('.transformed').each(function(){
+            this.innerHTML = this.innerHTML.replace(/\[\/\w{6}\]?/g,function(a){
+                return "<span class='face " + a.slice(2,-1) +"'></span>"
+            });
+            $(this).addClass('transformed')
+        })
+    }
+</script>
+
+
+</body>
+</html>

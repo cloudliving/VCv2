@@ -1,0 +1,298 @@
+html .ran-index {
+    width: 100%;
+    height: 100%;
+
+    background-color: #f0eff5;
+}
+
+.ran-index .header {
+    width: 100%;
+    height: .39rem;
+}
+
+.ran-index .header a {
+    font-size: .16rem;
+    line-height: .39rem;
+
+    float: left;
+
+    width: 50%;
+    height: 100%;
+
+    text-align: center;
+
+    color: #3a3a40;
+    background-color: #fff;
+}
+
+.ran-index .header a.cur {
+    color: #fff;
+    background-color: #0faffe;
+}
+
+.ran-index .block .ui-tab-nav {
+    width: 2.15rem;
+    height: .3rem;
+    margin: .08rem auto 0 auto;
+}
+
+.ran-index .block .ui-tab-nav li {
+    font-size: .14rem;
+    line-height: .3rem;
+
+    width: 50%;
+    height: .3rem;
+
+    color: #3a3a40;
+    background-color: #fff;
+}
+
+.ran-index .block .ui-tab-nav li.current {
+    color: #10aeff;
+    border-bottom: 2px #00a5e0 solid;
+    background-color: #ccedfb;
+}
+
+.ran-index .block .tit {
+    line-height: .36rem;
+
+    width: 100%;
+    height: .36rem;
+    margin-top: .08rem;
+
+    text-indent: .13rem;
+
+    color: #313136;
+    background-color: #d8d8db;
+}
+
+.ran-index .block .tit .ico-arrow {
+    line-height: .36rem;
+
+    float: right;
+
+    margin-right: .09rem;
+}
+
+.ran-index .block .tit .imp {
+    color: #f2633f;
+}
+
+.ran-index .block .top {
+    margin-top: .08rem;
+
+    background-color: #fff;
+}
+
+.ran-index .block .top a {
+    display: block;
+
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: .5rem;
+    margin-left: .1rem;
+}
+
+.ran-index .block .top a:first-child {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.ran-index .block .top a .ava {
+    float: left;
+
+    width: .35rem;
+    height: .35rem;
+    margin: .075rem 0 0 0;
+
+    border-radius: 50%;
+}
+
+.ran-index .block .top a p {
+    float: left;
+
+    margin: .07rem 0 0 .14rem;
+}
+
+.ran-index .block .top a p span {
+    display: block;
+
+    color: #313136;
+}
+
+.ran-index .block .top a p span:first-child {
+    font-size: .13rem;
+}
+
+.ran-index .block .top a p span:last-child {
+    font-size: .11rem;
+}
+
+.ran-index .block .top a .pri {
+    position: relative;
+
+    float: right;
+
+    width: .29rem;
+    height: .36rem;
+    margin: .07rem .2rem 0 0;
+}
+
+.ran-index .block .top a .pri img {
+    width: 100%;
+    height: 100%;
+}
+
+.ran-index .block .top a .pri i {
+    font-size: .07rem;
+
+    position: absolute;
+    top: .09rem;
+    left: .06rem;
+
+    color: #fff;
+}
+.ran-index .block .top .ico-arrow {
+    line-height: .5rem;
+
+    float: right;
+
+    margin-right: .19rem;
+}
+.ran-index .rank-table {
+    width: 100%;
+    margin: .08rem 0;
+
+    background: #fff;
+}
+.ran-index .rank-table tr {
+    border-bottom: 1px solid #dedfe0;
+}
+.ran-index .rank-table td {
+    padding: .05rem 0;
+}
+.ran-index .rank-table tr td:nth-child(1) {
+    width: .20rem;
+
+    text-align: right;
+}
+.ran-index .rank-table tr td:nth-child(2) {
+    width: .45rem;
+
+    text-align: center;
+}
+.ran-index .rank-table tr td:nth-child(3) {
+    padding-right: .1rem;
+}
+.ran-index .rank-table tr td:nth-child(4) {
+    width: .7rem;
+    padding-right: .1rem;
+
+    text-align: right;
+}
+.ran-index .rank-table .num {
+    font-size: .14rem;
+}
+.ran-index .rank-table .front {
+    font-size: .17rem;
+    font-style: italic;
+
+    color: #f2633f;
+}
+.ran-index .rank-table .avatar {
+    width: .24rem;
+    height: .24rem;
+
+    border-radius: 50%;
+}
+.ran-index .rank-table .name {
+    font-size: .13rem;
+}
+.ran-index .rank-table .time {
+    font-size: .13rem;
+
+    color: #949494;
+}
+.ran-index .block .tip {
+    width: 100%;
+    height: .83rem;
+
+    text-align: center;
+
+    background-color: #fff;
+}
+
+.ran-index .block .tip img {
+    width: .35rem;
+    height: .35rem;
+    margin: .13rem 0 .05rem 0;
+}
+
+.ran-index .block .tip p {
+    font-size: .13rem;
+
+    color: #313136;
+}
+
+.ran-index .block .tip .pint {
+    margin: 0 .02rem;
+
+    color: #f2633f;
+}
+
+.ran-index .ui-tab-nav .current {
+    color: #fff;
+    background-color: #0faffe;
+}
+
+.ran-index.ui-tab-nav li {
+    font-size: .16rem;
+    line-height: .39rem;
+
+    width: 50%;
+    height: 100%;
+
+    text-align: center;
+
+    color: #3a3a40;
+    background-color: #fff;
+}
+.ran-index .header {
+    width: 2.15rem;
+    height: .3rem;
+    margin: 0 auto;
+}
+
+.ran-index .header li {
+    font-size: .14rem;
+    line-height: .3rem;
+
+    float: left;
+
+    width: 50%;
+    height: .3rem;
+
+    text-align: center;
+
+    color: #3a3a40;
+    background-color: #fff;
+}
+
+.ran-index .header li.active {
+    color: #10aeff;
+    border-bottom: 4px #0faffe solid;
+}
+
+.ran-index .slide-module > li {
+    display: none;
+}
+
+.ran-index .slide-module > li.active {
+    display: block;
+}
+.ran-index .ui-tab-nav {
+    margin-bottom: 10px;
+}
+.ran-index .block .tit {
+    margin-top: 10px;
+}

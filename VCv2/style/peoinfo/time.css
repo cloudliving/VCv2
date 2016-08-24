@@ -1,0 +1,162 @@
+html .peo-time {
+    width: 100%;
+    height: 100%;
+
+    background-color: #efeff4;
+}
+.peo-time .header {
+    width: 100%;
+    height: .78rem;
+
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fff;
+}
+.peo-time .header .ava {
+    float: left;
+
+    width: .48rem;
+    height: .48rem;
+    margin: .15rem .1rem 0 .15rem;
+}
+.peo-time .header .ava img {
+    width: 100%;
+    height: 100%;
+}
+.peo-time .header .info {
+    float: left;
+
+    margin: .2rem 0 0 .1rem;
+}
+.peo-time .header .info p:first-child {
+    font-size: 16px;
+
+    margin-bottom: .04rem;
+}
+.peo-time .header .info p:last-child {
+    font-size: 14px;
+    color: #808080;
+}
+.peo-time .header .info .imp {
+    color: #ff9d46;
+}
+.peo-time .tip {
+    margin-top: .15rem;
+
+    background-color: #fff;
+}
+.peo-time .tip p {
+    margin-left: .1rem;
+    margin-right: .1rem;
+    padding: .15rem .1rem .15rem 0;
+
+    color: #808080;
+}
+.peo-time .tip .ice {
+    border-bottom: 1px solid #e5e5e5;
+}
+.peo-time .tip .warm span {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    top: .05rem;
+}
+.peo-time .tip .warm a {
+    line-height: .3rem;
+
+    float: right;
+
+    width: 1.0rem;
+    height: .3rem;
+
+    text-align: center;
+
+    color: #fff;
+    border-radius: 6px;
+    background-color: #fd8362;
+}
+
+.peo-time .record {
+    margin: .15rem 0;
+
+
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fff;
+}
+.peo-time .record .tit {
+    font-size: 16px;
+
+    padding: .15rem 0 .15rem .1rem;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+.peo-time .record .box {
+    margin-left: .1rem;
+    margin-right: .1rem;
+    padding: .15rem 0;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+.peo-time .record .box p {
+    position: relative;
+    text-align: justify;
+    margin-bottom: .06rem;
+    padding-right: .35rem;
+}
+.peo-time .record .box p:last-child {
+    margin-bottom: 0;
+}
+.peo-time .record .box .year {
+    font-size: 14px;
+
+    color: #999;
+}
+.peo-time .record .box .day {
+    font-size: 14px;
+
+    margin-left: .17rem;
+
+    color: #999;
+}
+.peo-time .record .box .ico-up {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+
+    margin-top: .03rem;
+    margin-right: .15rem;
+}
+.peo-time .record .box .ico-type {
+    font-size: 16px;
+    font-weight: bold;
+
+    position: relative;
+    top: .01rem;
+}
+.peo-time .record .box .type {
+    font-size: 15px;
+
+    margin-left: .05rem;
+
+    color: #999;
+}
+.peo-time .record .load {
+    font-size: 14px;
+
+    padding: .15rem 0;
+
+    text-align: center;
+}
+.peo-time .record .norec {
+    font-size: 14px;
+
+    display: inline-block;
+
+    width: 100%;
+    padding: .25rem 0;
+
+    text-align: center;
+    text-decoration: underline;
+
+    color: #ff9d46;
+}

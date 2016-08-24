@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no, email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Import Flexible Script(High Priority) -->
+    <script src="../../dist/js/Flexible.js"></script>
+    <!-- Import Stylesheets -->
+    <link rel="stylesheet" href="../../dist/css/frozen.min.css">
+    <!-- build:css -->
+    <link rel="stylesheet" href="../../VCv2/icovc/style.css">
+    <link rel="stylesheet" href="../../VCv2/style/point/ex-call.css">
+    <!-- endbuild -->
+    <title>兑换信息</title>
+</head>
+
+<body class="poi-ex-call">
+    <!-- MainBD -->
+    <div class="contain">
+        <div class="phonenum">
+            <input type="text" placeholder="输入要充值的手机号">
+        </div>
+        <div class="tips">
+            <p>提示：</p>
+            <p>1、确保你输入的手机号是正确的。</p>
+            <p>2、积分兑换后，会尽快为你办理，一般48小时内完成，请耐心等待。</p>
+            <p>3、如果没有点击“提交兑换信息”按钮，则本次兑换没有完成，不会扣除你的积分。</p>
+        </div>
+        <div class="submit">
+            <input type="submit" value="提交兑换信息">
+        </div>
+        <p class="error">你输入的手机号不正确，请重新输入！</p>
+    </div>
+    <!-- Import Scripts -->
+    <script src="../../dist/js/zepto.min.js"></script>
+    <script src="../../dist/js/frozen.min.js"></script>
+    <script>
+    var $Phone = $('.phonenum input');
+
+    //输入后按钮颜色改变
+    $Phone.keyup(function() {
+        var $NumVal = $Phone.val();
+        if ($NumVal == "") {
+            $('.submit input').css('backgroundColor', '#ccc');
+        } else {
+            $('.submit input').css('backgroundColor', '#fd8362');
+        }
+    });
+
+    //验证手机号
+    $('.submit input').tap(function() {
+        var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+        if (!myreg.test($Phone.val())) {
+            $('.error').show();
+        }
+    });
+
+    //重新输入，提示隐藏
+    $Phone.keydown(function() {
+        if ($('.error').css('display') == "block") {
+            // $Phone.val("");
+            $('.error').hide();
+        }
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+.page-mycmt {
+    background: #efeff4;
+    font-size: 14px;
+}
+.page-mycmt a,
+.page-mycmt a:hover,
+.page-mycmt a:visited {
+    color: #333;
+}
+.page-mycmt .bgfff{
+    background: #fff;
+}
+.page-mycmt .bb {
+    border-bottom: 1px solid #e5e5e5;
+}
+.page-mycmt .highlight {
+    color: #ff9d46;
+}
+.page-mycmt .pd-15-v {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.page-mycmt .pd-10-l {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.page-mycmt .mycmt-header {
+    margin-bottom: 15px;
+    padding: 0 10px;
+    color: #808080;
+}
+.page-mycmt .caption {
+    font-size: 1.07em;
+}
+.page-mycmt .mycmt-item {
+    position: relative;
+    display: block;
+}
+.page-mycmt .mycmt-item i {
+    position: absolute;
+    font-weight: 900;
+    left: 0;
+    top: 2px;
+
+    margin-right: 5px;
+}
+.page-mycmt .mycmt-item:last-child {
+    border-bottom: none;
+}
+.page-mycmt .mycmt-item .ico-heart {
+    position: relative;
+    top: 1px;
+    margin-left: 5px;
+}
+
+.page-mycmt .name,
+.page-mycmt .timestamp,
+.page-mycmt .position,
+.page-mycmt .cmt-like {
+    color: #999;
+}
+
+.page-mycmt * + .content {
+    margin-top: 15px;
+}
+.page-mycmt .content {
+    margin-bottom: 10px;
+}
+.page-mycmt .position {
+    position: relative;
+    padding-left: 20px;
+}
+.page-mycmt .cmt-like {
+    float: right;
+}
+
+.page-mycmt .timestamp,
+.page-mycmt .go-cmt {
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+
+.page-mycmt .go-cmt {
+    width: .7rem;
+    height: .25rem;
+    line-height: .25rem;
+
+    background: #fd8362;
+    color: #fff;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.page-mycmt .no-comment {
+    padding-right: .8rem;
+    padding-left: .1rem;
+}
+.page-mycmt .no-comment .content {
+    color: #ccc;
+    font-size: .85em;
+    margin-bottom: .1rem;
+}
+
+
+/* 表情相关 */
+.page-mycmt .face {
+    display: inline-block;
+    width: .5em;
+    height: .5em;
+    background-image: url("http://dzq.cloudliving.net/warehouse/images/face.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: 1em;
+    background-size: 1em;
+    font-size: 36px;
+    vertical-align: text-bottom;
+    line-height: .5;
+}
+.page-mycmt .face01 { background-position: 0 0;}
+.page-mycmt .face02 { background-position: 0 -.5em;}
+.page-mycmt .face03 { background-position: 0 -1em;}
+.page-mycmt .face04 { background-position: 0 -1.5em;}
+.page-mycmt .face05 { background-position: 0 -2em;}
+.page-mycmt .face06 { background-position: 0 -2.5em;}
+.page-mycmt .face07 { background-position: 0 -3em;}
+.page-mycmt .face08 { background-position: 0 -3.5em;}
+.page-mycmt .face09 { background-position: 0 -4em;}
+.page-mycmt .face10 { background-position: 0 -4.5em;}
+.page-mycmt .face11 { background-position: 0 -5em;}
+.page-mycmt .face12 { background-position: 0 -5.5em;}
+.page-mycmt .face13 { background-position: -.5em 0;}
+.page-mycmt .face14 { background-position: -.5em -.5em;}
+.page-mycmt .face15 { background-position: -.5em -1em;}
+.page-mycmt .face16 { background-position: -.5em -1.5em;}
+.page-mycmt .face17 { background-position: -.5em -2em;}
+.page-mycmt .face18 { background-position: -.5em -2.5em;}
+.page-mycmt .face19 { background-position: -.5em -3em;}
+.page-mycmt .face20 { background-position: -.5em -3.5em;}
+.page-mycmt .face21 { background-position: -.5em -4em;}
+.page-mycmt .face22 { background-position: -.5em -4.5em;}
+.page-mycmt .face23 { background-position: -.5em -5em;}
+.page-mycmt .face24 { background-position: -.5em -5.5em;}
+
+
+
+

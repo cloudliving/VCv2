@@ -1,0 +1,120 @@
+.poi-goods-detail {
+    background-color: #efeff4;
+}
+.poi-goods-detail input {
+            appearance: none;
+    -webkit-appearance: none;
+}
+.poi-goods-detail .contain {
+    padding-bottom: 15px;
+}
+.poi-goods-detail .banner {
+    display: block;
+
+    width: 100%;
+    height: 1.15rem;
+}
+.poi-goods-detail .info {
+    position: relative;
+
+    padding: 15px 10px;
+
+
+    background-color: #fff;
+}
+.poi-goods-detail .info p:nth-child(1) {
+    font-size: 14px;
+
+    margin-bottom: 4px;
+
+    color: #333;
+}
+.poi-goods-detail .ico-coin {
+    font-size: 16px;
+    line-height: 16px;
+    margin-right: 5px;
+}
+.poi-goods-detail .info p span:nth-child(2) {
+    font-size: 12px;
+
+    color: #999;
+}
+.poi-goods-detail .exbtn {
+    font-size: 12px;
+
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+
+    width: 100px;
+    height: 30px;
+
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    background-color: #fd8362;
+}
+.poi-goods-detail .common {
+    margin-top: 10px;
+
+    background-color: #fff;
+}
+.poi-goods-detail .title {
+    font-size: 16px;
+
+    padding:  10px;
+
+    color: #000;
+
+}
+.poi-goods-detail .main {
+    font-size: 14px;
+    line-height: 22px;
+
+    padding: 15px 10px;
+
+    color: #666;
+}
+.poi-goods-detail .introduce .main p {
+    text-indent: 2em;
+    text-align: justify;
+}
+.poi-goods-detail .introduce .main p a {
+    color: #ff9d46;
+
+}
+.poi-goods-detail .overlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, .35);
+}
+.poi-goods-detail .popbox {
+    margin-top: 150px;
+    padding: 0 20px;
+}
+.poi-goods-detail .dialog {
+    padding: 20px;
+
+    color: #191919;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.poi-goods-detail .dialog input {
+    margin-left: 30px;
+
+    color: #415783;
+    border: none;
+    background-color: #fff;
+}
+.poi-goods-detail .choose {
+    margin-top: 80px;
+    padding-right: 10px;
+
+    text-align: right;
+}

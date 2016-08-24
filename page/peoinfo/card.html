@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no, email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Import Flexible Script(High Priority) -->
+    <script src="../../dist/js/Flexible.js"></script>
+    <!-- Import Stylesheets -->
+    <link rel="stylesheet" href="../../dist/css/frozen.min.css">
+    <!-- build:css -->
+    <link rel="stylesheet" href="../../VCv2/icovc/style.css">
+    <link rel="stylesheet" href="../../VCv2/style/peoinfo/card.css">
+    <!-- endbuild -->
+    <title>公益名片</title>
+</head>
+
+<body class="peo-card">
+    <!-- MainBD -->
+    <div class="header clearfix">
+        <div class="ava">
+            <img src="../../VCv2/img/vcpic5.png">
+        </div>
+        <div class="info">
+            <p>
+                <span class="name">小王子</span>
+                <span class="ico-male"></span>
+                <!-- 如果为女性，替换如下 -->
+                <!-- <span class="ico-female"></span> -->
+            </p>
+            <p>
+                <span class="levels">四星志愿者</span>
+                <span class="ico-star"></span>
+                <span class="ico-star"></span>
+                <span class="ico-star"></span>
+                <span class="ico-star"></span>
+                <span class="ico-nostar"></span>
+            </p>
+        </div>
+        <div class="qrcode">
+            <span class="ico-qr"></span>
+        </div>
+    </div>
+    <div class="block">
+        <div class="box">
+            <p class="heav">公益积分：156623</p>
+            <p class="heav">公益时间：100小时</p>
+        </div>
+    </div>
+    <div class="block">
+        <div class="box">
+            <p class="heav tit">获得荣誉<span class="imp">1</span>个</p>
+            <div class="info">
+                <p class="les">2015年11月武汉市志愿之星</p>
+                <p class="les">2015年12月武汉市志愿之星</p>
+                <!-- <p class="les">还没有获得荣誉</p> -->
+            </div>
+        </div>
+    </div>
+    <div class="block">
+        <div class="box">
+            <p class="heav tit">加入组织<span class="imp">3</span>个</p>
+            <div class="info">
+                <p class="les">武汉XXXXXXXXXX</p>
+                <p class="les">武汉XXXXXXXXXXXXXXXXXX</p>
+                <p class="les">武汉XXXXXX</p>
+                <!-- <p class="les">还没有加入组织</p> -->
+            </div>
+        </div>
+    </div>
+    <div class="block bot">
+        <div class="box">
+            <p class="heav tit">参加活动<span class="imp">2</span>个</p>
+            <div class="info">
+                <p class="les">社区是我家，卫生干净靠大家，社区是我家，卫生干净靠大家</p>
+                <p class="les">社区是我家，卫生干净靠大家</p>
+                <!-- <p class="les">还没有参加活动</p> -->
+            </div>
+        </div>
+    </div>
+    <div class="mask">
+        <div class="cont">
+            <div class="header">
+                <div class="ava">
+                    <img src="../../VCv2/img/vcpic5.png">
+                </div>
+                <div class="info">
+                    <p>
+                        <span class="name">小王子</span>
+                        <span class="ico-male"></span>
+                        <!-- 如果为女性，替换如下 -->
+                        <!-- <span class="ico-female"></span> -->
+                    </p>
+                    <p>
+                        <span class="levels">四星志愿者</span>
+                        <span class="ico-star"></span>
+                        <span class="ico-star"></span>
+                        <span class="ico-star"></span>
+                        <span class="ico-star"></span>
+                        <span class="ico-nostar"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="mycode">
+                <img src="../../VCv2/img/vcpic24.png">
+            </div>
+            <div class="myinfo">
+                <p>扫一扫上面的二维码</p>
+                <p>查看我的公益名片</p>
+            </div>
+        </div>
+    </div>
+    <!-- Import Scripts -->
+    <script src="../../dist/js/zepto.min.js"></script>
+    <script src="../../dist/js/frozen.min.js"></script>
+    <script>
+    (function() {
+        $('.ico-qr').on('tap', function() {
+            $('.mask').show(300);
+            $('.mask').on('tap', function(e) {
+                (e.target.className === 'mask') ? $(this).fadeOut(): null;
+            })
+        })
+    })();
+    </script>
+</body>
+
+</html>

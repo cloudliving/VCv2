@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no, email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Import Flexible Script(High Priority) -->
+    <script src="../../dist/js/Flexible.js"></script>
+    <!-- Import Stylesheets -->
+    <link rel="stylesheet" href="../../dist/css/frozen.min.css">
+    <!--build:css-->
+    <link rel="stylesheet" href="../../VCv2/icovc/style.css" />
+    <link rel="stylesheet" href="../../VCv2/style/orgs/orgs.css" />
+    <!--endbuild-->
+    <title>组织详情</title>
+</head>
+
+<body class="page-orgs page-datail" style="padding-bottom:50px;">
+    <!-- MainBD -->
+    <!-- panel 组织面板-->
+    <div class="panel org-item clearfix">
+        <img class="avatar" src="../../VCv2/img/vcpic13.png" alt="" />
+        <div class="main main1">
+            <h4 class="ui-nowrap ui-whitespace uk-">武昌区吴天祥小组志愿者联合会</h4>
+            <p class="time"><i class="ico-time-o"></i> <em>100000</em>小时 </p>
+        </div>
+        <a href="javascript:" class="share">
+            <i class="ico-share"></i>
+        </a>
+    </div>
+    <p class="title">组织信息</p>
+    <div class="list">
+        <a class="item links" href="#">
+            <div class="left">组织活动</div>
+            <div class="right highlight"><em>10</em>场</div>
+            <i class="ico-arrow position-right "></i>
+        </a>
+        <div class="item">
+            <div class="left">志愿者人数</div>
+            <div class="right "><em>200</em>人</div>
+        </div>
+    </div>
+    <div class="list">
+        <div class="item">
+            <div class="left">服务类型</div>
+            <div class="right"><em>帮教助学</em></div>
+        </div>
+        <div class="item">
+            <div class="left">注册日期</div>
+            <div class="right "><em>2015.05.01</em></div>
+        </div>
+        <div class="item">
+            <div class="left">负责人姓名</div>
+            <div class="right "><em>Lucky</em></div>
+        </div>
+        <div class="item">
+            <div class="left">负责人号码</div>
+            <div class="right "><em>1234567890123</em></div>
+        </div>
+    </div>
+    <p class="title">组织介绍</p>
+    <p class="intro">
+        这里是组织介绍，这里是组织介绍，这里是组织介绍，这里是组织介绍，这里是组织介绍，这里是组织介绍，这里是组织介绍， 这里是组织介绍，这里是组织介绍，这里是组织介绍。
+    </p>
+    <div class="join">
+        <!-- 给a标签添加readonly类，背景变为深色 -->
+        <a class="ui-border-radius " href="#">我要加入</a>
+    </div>
+    <!-- Import Scripts -->
+    <script src="../../dist/js/zepto.min.js"></script>
+    <script src="../../dist/js/frozen.min.js"></script>
+    <script src="../../VCv2/script/thick.js"></script>
+    <script>
+
+    // 加入组织逻辑
+    $(function() {
+        $('.join a').on('tap', function() {
+            var $this = $(this);
+            if ($this.hasClass('readonly')) {
+
+                var temp = $.dialog({
+                    title: "云生活提示",
+                    content: "是否退出组织",
+                    button: ["确认", "取消"]
+                });
+                $('#dialogButton0').on('tap', function() {
+                    $.tips({
+                        content: "你已取消报名!",
+                        stayTime: 2000
+                    });
+                    $this.removeClass('readonly');
+                    $this.text('我要加入');
+                });
+
+            } else {
+                $.tips({
+                    content: "你已成功加入该组织",
+                    stayTime: 2000
+                });
+                $this.addClass('readonly');
+                $this.text('已加入');
+            }
+        })
+    })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no, email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Import Flexible Script(High Priority) -->
+    <script src="dist/js/Flexible.js"></script>
+    <!-- Import Stylesheets -->
+    <link rel="stylesheet" href="dist/css/frozen.min.css">
+    <!-- build:css -->
+    <link rel="stylesheet" href="VCv2/icovc/style.css">
+    <link rel="stylesheet" href="VCv2/style/index/index.css">
+    <!-- endbuild -->
+    <title>志愿之城</title>
+</head>
+
+<body class="index">
+    <!-- MainBD -->
+    <div class="ui-slider">
+        <ul class="ui-slider-content">
+            <li>
+                <a href="###">
+                    <img src="VCv2/img/banner01.png">
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                    <img src="VCv2/img/banner02.png">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main half">
+        <div class="row">
+            <a href="###">
+                <p class="ico-iscan"></p>
+                <p>扫描打卡</p>
+            </a>
+            <a href="page/center/index.html">
+                <p class="ico-ipeo"></p>
+                <p>个人中心</p>
+            </a>
+        </div>
+    </div>
+    <div class="main quar ui-border-b">
+        <div class="row">
+            <a href="###" class="ui-border-r">
+                <p class="ico-iacts"></p>
+                <p>活动</p>
+            </a>
+            <a href="###" class="ui-border-r">
+                <p class="ico-iorgs"></p>
+                <p>组织</p>
+            </a>
+            <a href="###">
+                <p class="ico-irank"></p>
+                <p>排行榜</p>
+            </a>
+        </div>
+    </div>
+    <div class="main quar ui-border-b">
+        <div class="row">
+            <a href="###" class="ui-border-r">
+                <p class="ico-ishop"></p>
+                <p>积分商城</p>
+            </a>
+            <a href="###" class="ui-border-r">
+                <p class="ico-iheart"></p>
+                <p>爱心圈</p>
+            </a>
+            <a href="###">
+                <p class="ico-iproject"></p>
+                <p>项目</p>
+            </a>
+        </div>
+    </div>
+    <div class="myacts">
+        <p class="tit clearfix">
+            <span>我的活动</span>
+            <span class="ico-arrow"></span>
+        </p>
+
+        <!-- 如果有活动 -->
+        <a href="###" class="oneact">
+            <p>某某敬老爱幼活动</p>
+            <p>
+                <span>12月28日</span>
+                <span>07:12 ~ 11:12</span>
+            </p>
+        </a>
+        <!-- 如果有活动 -->
+
+        <!-- 如果没有活动 -->
+        <div class="none-module">
+            <a href="#">还有没参加活动，快来选一个吧</a>
+        </div>
+        
+        <!-- 如果没有活动 -->
+    </div>
+    <p style="text-align: center;color: #ccc;font-size: 12px">武汉市文明办</p>
+    <!-- Import Scripts -->
+    <script src="dist/js/zepto.min.js"></script>
+    <script src="dist/js/frozen.min.js"></script>
+    <script>
+        (function() {
+            var slider = new fz.Scroll('.ui-slider', {
+                role: 'slider',
+                indicator: true,
+                autoplay: true,
+                interval: 3000,
+                duration: 800
+            });
+        })();
+    </script>
+</body>
+
+</html>

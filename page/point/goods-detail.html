@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no, email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Import Flexible Script(High Priority) -->
+    <script src="../../dist/js/Flexible.js"></script>
+    <!-- Import Stylesheets -->
+    <link rel="stylesheet" href="../../dist/css/frozen.min.css">
+    <!-- build:css -->
+    <link rel="stylesheet" href="../../VCv2/icovc/style.css">
+    <link rel="stylesheet" href="../../VCv2/style/point/goods-detail.css">
+    <!-- endbuild -->
+    <title>商品详情</title>
+</head>
+
+<body class="poi-goods-detail">
+    <!-- MainBD -->
+    <div class="contain">
+        <div class="head">
+            <img class="banner" src="../../VCv2/img/vcpic1.png" alt="">
+            <div class="info">
+                <p>免费洗车券</p>
+                <p>
+                    <span class="ico-coin">30000</span>
+                    <span>公益时间大于0小时</span>
+                </p>
+                <input class="exbtn" type="button" value="立即兑换">
+            </div>
+        </div>
+        <div class="content">
+            <div class="common">
+                <h3 class="title">商品信息</h3>
+                <div class="main">
+                    <p>商品价值：30元</p>
+                    <p>有限期限：2015.12.22-2016.02.01</p>
+                    <p>数量有限，先兑先得</p>
+                    <p>本商品不限兑换次数</p>
+                </div>
+            </div>
+            <div class="introduce common">
+                <h3 class="title">商家介绍</h3>
+                <div class="main">
+                    <p>途虎养车网2011年创建于上海，是中国第一家养车类B2C电商平台，主营：轮胎、机油、汽车保养、汽车美容等产品和服务，为客户提供线上预约+线下安装的养车方式。</p>
+                    <p>更多优惠信息，可点击访问一下网址</p>
+                    <p><a href="http://www.taobao.com/xiaokeai">http://www.taobao.com/xiaokeai</a></p>
+                </div>
+            </div>
+            <div class="common">
+                <h3 class="title">兑换流程</h3>
+                <div class="main">
+                    <p>1、用户点击“立即兑换”，兑换之后哈哈哈哈哈哈。</p>
+                    <p>2、使用步骤。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="overlayer">
+        <div class="popbox">
+            <div class="dialog">
+                <p>是否确定兑换此商品？</p>
+                <p class="choose">
+                    <input class="ok" type="button" value="确定">
+                    <input class="cancle" type="button" value="取消">
+                </p>
+            </div>
+        </div>
+    </div> -->
+    <!-- Import Scripts -->
+    <script src="../../dist/js/zepto.min.js"></script>
+    <script src="../../dist/js/frozen.min.js"></script>
+    <script>
+    //时长不足时，“立即兑换”按钮的样式变为灰色，并且不能点击
+    // $('.exbtn').val("时长不足").css('backgroundColor','#ccc').attr("disabled", flase);
+    $(".exbtn").tap(function() {
+        var dia = $.dialog({
+            title: '温馨提示',
+            content: '是否确定兑换此商品',
+            button: ["确认", "取消"]
+        });
+        $('#dialogButton0').tap(function() {
+            //点击确认时执行事件
+        })
+        $('#dialogButton1').tap(function() {
+            //点击取消时执行事件
+        })
+    });
+    </script>
+</body>
+
+</html>

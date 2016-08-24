@@ -1,0 +1,103 @@
+.poi-index .banner img {
+    display: block;
+
+    width: 100%;
+}
+.poi-index .head-bar a {
+    display: inline-block;
+    float: left;
+
+    width: 33.333%;
+    padding: 10px 0;
+
+    text-align: center;
+}
+.poi-index .head-bar a p {
+    font-size: 13px;
+
+    color: #333;
+}
+.poi-index .ico-gift {
+    font-size: 24px;
+}
+.poi-index .ico-file {
+    font-size: 24px;
+}
+.poi-index .point span {
+    font-size: 19px;
+    line-height: 29px;
+
+    display: block;
+
+    color: #fd8362;
+}
+.poi-index .blank {
+    height: 10px;
+
+    background-color: #efeff4;
+}
+.poi-index .content .title {
+    position: relative;;
+    font-size: 15px;
+
+    padding: 10px 20px;
+
+    color: rgba(0, 0, 0, 1);
+}
+.poi-index .content .title:before {
+    position: absolute;
+
+    left: 0.1rem;
+    
+    /*top: 50%;*/
+    margin-top: 3px;
+    content: '';
+    width: 0px;
+    height: 10px;
+    border: 2px solid #fd8362;
+}
+
+.poi-index .item {
+    display: inline-block;
+    float: left;
+
+    width: 44%;
+    margin-right: 3%;
+    margin-bottom: 15px;
+    margin-left: 3%;
+
+    text-align: center;
+
+    box-shadow: 1px 1px 1px 1px #e7e7e7;
+}
+.poi-index .item img {
+    display: block;
+
+    width: 100%;
+    height: .9rem;
+}
+.poi-index .gift-info {
+    padding: 10px 8px;
+}
+.poi-index .gift-info p {
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.poi-index .gift-info p:first-child {
+    font-size: 15px;
+
+    color: #333;
+}
+.poi-index .coin-num .ico-coin {
+    font-size: 13px;
+    font-weight: 900;
+
+    color: #ff9d46;
+}
+.poi-index .coin-num span:nth-child(2) {
+    font-size: 15px;
+
+    color: #ff9d46;
+}

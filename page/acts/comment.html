@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no, email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Import Flexible Script(High Priority) -->
+    <script src="../../dist/js/Flexible.js"></script>
+    <!-- Import Stylesheets -->
+    <link rel="stylesheet" href="../../dist/css/frozen.min.css">
+    <!--build:css-->
+    <link rel="stylesheet" href="../../VCv2/icovc/style.css" />
+    <link rel="stylesheet" href="../../VCv2/style/plugin/comment.css" />
+    <link rel="stylesheet" href="../../VCv2/style/acts/acts.css" />
+    <!--endbuild-->
+    <title>活动详情</title>
+</head>
+
+<body class="page-acts">
+    <!-- MainBD -->
+    <!-- panel 活动面板-->
+    <div class="panel">
+        <h4 class="ui-nowrap ui-whitespace uk-">保利心语社区公益音乐培训辅导</h4>
+        <p class="time"><i class="ico-sec"></i>2015.12.29 07:12~2015.12.29 13:13</p>
+        <a href="javascript:" class="share">
+            <i class="ico-share"></i>
+        </a>
+    </div>
+    <!-- 活动信息及介绍 -->
+    <div class="ui-tab detail-tab">
+        <ul class="ui-tab-nav ui-border-b">
+            <li class="current">活动信息</li>
+            <li>活动介绍</li>
+        </ul>
+        <ul class="ui-tab-content" style="width:300%">
+            <li class="current page1">
+                <div class="list">
+                    <div class="item">
+                        <div class="left">活动地址</div>
+                        <div class="right"><em>保利心语社区21栋保利心语居委会</em></div>
+                    </div>
+                    <div class="item">
+                        <div class="left">已报名</div>
+                        <div class="right "><em class="highlight">20人</em></div>
+                    </div>
+                    <div class="item">
+                        <div class="left">活动状态</div>
+                        <div class="right "><em>报名中</em></div>
+                    </div>
+                    <div class="item">
+                        <div class="left">活动类别</div>
+                        <div class="right "><em>帮教助学</em></div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <div class="left">发起组织</div>
+                        <div class="right"><em>洪山区志愿者服务队</em></div>
+                    </div>
+                    <div class="item">
+                        <div class="left">现场联系人</div>
+                        <div class="right "><em>Lucky</em></div>
+                    </div>
+                    <div class="item">
+                        <div class="left">联系电话</div>
+                        <div class="right "><em>1234567890123</em></div>
+                    </div>
+                </div>
+            </li>
+            <li class="page2">
+                <div class="intro">
+                    这里是活动介绍，这里是活动介绍，这里是活动介绍，这里是活动介绍，这里是活动介绍，这里是活动介绍， 这里是活动介绍，这里是活动介绍，这里是活动介绍，这里是活动介绍，这里是活动介绍，这里是活动介绍， 这里是活动介绍，这里是活动介绍，
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="list">
+        <a href="#" class="item">
+            <div class="left">打卡记录</div>
+            <div class="right"><i class="ico-arrow"></i></div>
+        </a>
+        <!-- 注释的打卡提示 -->
+        <!--<p class="not-started">活动开始前20分钟到结束后10分钟内，都可以打卡</p>-->
+        <div class="item">
+            <div class="left">公益时间</div>
+            <div class="right"><em>增长中</em></div>
+        </div>
+        <div class="item">
+            <div class="left">打卡人数</div>
+            <div class="right"><em class="highlight">20人</em></div>
+        </div>
+    </div>
+    <!-- 评论区域 -->
+    <div id="comment-area">
+    </div>
+    <!-- Import Scripts -->
+    <script src="../../dist/js/zepto.min.js"></script>
+    <script src="../../dist/js/frozen.min.js"></script>
+    <script src="../../VCv2/script/comment.js"></script>
+    <script>
+    // 选项卡切换
+    window.addEventListener('load', function() {
+        var tab = new fz.Scroll('.ui-tab', {
+            role: 'tab'
+        });
+    });
+
+    // 评论初始化
+    var comment = new Comment();
+    comment.init();
+    </script>
+</body>
+
+</html>

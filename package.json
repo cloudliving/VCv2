@@ -1,0 +1,26 @@
+{
+    "name": "yshlib",
+    "version": "1.0.0",
+    "description": "This is a private project by YSH.",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Taisetsuz/xxx.git"
+    },
+    "author": "Taisetsuz",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Taisetsuz/xxx/issues"
+    },
+    "homepage": "https://github.com/Taisetsuz/xxx#readme",
+    "devDependencies": {
+        "gulp": "^3.9.0",
+        "gulp-concat": "^2.6.0",
+        "gulp-html-replace": "^1.5.5",
+        "gulp-minify-css": "^1.2.2",
+        "gulp-replace": "^0.5.4"
+    }
+}

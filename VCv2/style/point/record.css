@@ -1,0 +1,86 @@
+.poi-record {
+    background-color: #efeff4;
+}
+.poi-record input {
+            appearance: none;
+    -webkit-appearance: none;
+}
+.poi-record .head {
+    font-size: 14px;
+    line-height: 22px;
+
+    padding: 10px;
+
+    color: #999;
+    background-color: #efeff4;
+}
+.poi-record .content {
+    margin-bottom: 20px;
+
+}
+.poi-record .item {
+    position: relative;
+
+    padding: 15px 10px;
+    background: #fff;
+
+}
+.poi-record .item .goodsimg {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+
+    overflow: hidden;
+
+    width: 70px;
+    height: 70px;
+
+    border-radius: 5px;
+}
+.poi-record .item + .item {
+    margin-top: 10px;
+}
+.poi-record .goodsimg img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}
+.poi-record .item .info {
+    min-height: 70px;
+    padding-left: 85px;
+}
+.poi-record .info p:nth-child(1) {
+    font-size: 15px;
+
+    padding: 6px 0 4px 0;
+
+    color: #1d1d26;
+}
+.poi-record .info p:not(:first-child) {
+    font-size: 13px;
+
+    color: #999;
+}
+.poi-record .exchanging span:nth-child(2) {
+    color: #ff9d46;
+}
+.poi-record .exchanged span:nth-child(2) {
+    color: #ccc;
+}
+.poi-record .continue {
+    font-size: 11px;
+    line-height: 25px;
+
+    position: absolute;
+    top: 37px;
+    right: 20px;
+
+    width: 70px;
+    height: 25px;
+
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    background-color: #fd8362;
+}

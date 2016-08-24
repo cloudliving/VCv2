@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no, email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Import Flexible Script(High Priority) -->
+    <script src="../../dist/js/Flexible.js"></script>
+    <!-- Import Stylesheets -->
+    <link rel="stylesheet" href="../../dist/css/frozen.min.css">
+    <!-- build:css -->
+    <link rel="stylesheet" href="../../VCv2/icovc/style.css">
+    <link rel="stylesheet" href="../../VCv2/style/verify/phonemodify.css">
+    <!-- endbuild -->
+    <title>修改手机号</title>
+</head>
+
+<body class="ver-phonemodify">
+    <!-- MainBD -->
+    <div class="contain">
+        <form action="">
+            <div class="group">
+                <div class="form-item">
+                    <label for="">旧手机号</label>
+                    <input id="oldnum" type="text" placeholder="请输入旧手机号码">
+                </div>
+                <div class="form-item">
+                    <label for="">新手机号</label>
+                    <input id="newnum" type="text" placeholder="请输入新手机号码">
+                </div>
+                <div class="form-item">
+                    <label for="">验证码</label>
+                    <input id="code" type="text" placeholder="请输入验证码">
+                    <input class="ver-code" type="button" value="发送验证码">
+                </div>
+            </div>
+            <div class="submit">
+                <input type="submit" value="提交">
+            </div>
+        </form>
+    </div>
+    <!-- Import Scripts -->
+    <script src="../../dist/js/zepto.min.js"></script>
+    <script src="../../dist/js/frozen.min.js"></script>
+    <script>
+    function check() {
+        var OldNum = $('#oldnum').val();
+        var NewNum = $('#newnum').val();
+        if (OldNum != "" && NewNum != "") {
+            $('.ver-code').css('backgroundColor', '#fd8362');
+        } else {
+            $('.ver-code').css('backgroundColor', '#ccc');
+            $('.submit input').css('backgroundColor', '#ccc');
+        }
+    }
+    $('#oldnum').bind('keyup', check);
+    $('#newnum').bind('keyup', check);
+
+    $('#code').keyup(function() {
+        var OldNum = $('#oldnum').val();
+        var NewNum = $('#newnum').val();
+        var Verify = $('#code').val();
+        if (OldNum != "" && NewNum != "" && Verify != "") {
+            $('.submit input').css('backgroundColor', '#fd8362');
+        } else {
+            $('.submit input').css('backgroundColor', '#ccc');
+        }
+    });
+    </script>
+</body>
+
+</html>

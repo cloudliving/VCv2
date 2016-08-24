@@ -1,0 +1,154 @@
+html .ran-org {
+    width: 100%;
+    height: 100%;
+
+    background-color: #f0eff5;
+}
+.ran-org .header {
+    position: relative;
+    line-height: .36rem;
+
+    width: 100%;
+    height: .36rem;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #e57556;
+}
+.ran-org .header p span:first-child {
+    font-size: .15rem;
+}
+.ran-org .header .ico-share {
+    position: absolute;
+    top: 0;
+    font-size: .18rem;
+    line-height: .36rem;
+
+    right: .08rem;
+
+    float: right;
+
+    color: #fff;
+}
+.ran-org .from {
+    line-height: .31rem;
+
+    width: 100%;
+    height: .31rem;
+
+    text-align: center;
+
+    background-color: #fff;
+}
+.ran-org .from .tit {
+    font-size: .13rem;
+
+    color: #fa7e5f;
+}
+.ran-org .block {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: .08rem;
+}
+
+
+
+.ran-org .block .row:after {
+    clear: both;
+    content: '.';
+    visibility: hidden;
+    display: block;
+    height: 0;
+}
+.ran-org .block .row {
+    width: 100%;
+    /*height: 1.41rem;*/
+    margin-bottom: .06rem;
+}
+.ran-org .block .row .box {
+    position: relative;
+
+    float: left;
+
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+
+    text-align: center;
+
+    background-color: #fff;
+    background-clip: content-box;
+}
+.ran-org .block .row .box:first-child {
+    padding-right: .03rem;
+}
+.ran-org .block .row .box:last-child {
+    padding-left: .03rem;
+}
+.ran-org .block .row .box .ava {
+    position: relative;
+
+    width: .9rem;
+    height: .9rem;
+    margin: .12rem auto .09rem auto;
+}
+.ran-org .block .row .box .ava img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: .45rem;
+}
+.ran-org .block .row .box .month {
+    position: absolute;
+    top: .6rem;
+    right: 0;
+}
+.ran-org .block .row .box .month .bot {
+    width: .29rem;
+    height: .36rem;
+}
+.ran-org .block .row .box .month .top {
+    font-size: .06rem;
+
+    position: absolute;
+    top: .1rem;
+    left: .075rem;
+
+    color: #fff;
+}
+.ran-org .block .row .box .name {
+    font-size: .16rem;
+
+    color: #313136;
+}
+
+
+
+
+.ran-org .ago {
+    line-height: .33rem;
+
+    display: inline-block;
+
+    width: 100%;
+    height: .33rem;
+    margin: -.06rem 0 .08rem 0;
+
+    text-align: center;
+
+    color: #848484;
+    background-color: #fff;
+}
+.ran-org .copyright {
+    font-size: .11rem;
+
+    margin-bottom: .08rem;
+
+    text-align: center;
+
+    color: #b3b3b3;
+}

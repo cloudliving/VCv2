@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no, email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Import Flexible Script(High Priority) -->
+    <script src="../../dist/js/Flexible.js"></script>
+    <!-- Import Stylesheets -->
+    <link rel="stylesheet" href="../../dist/css/frozen.min.css">
+    <!--build:css-->
+    <link rel="stylesheet" href="../../VCv2/icovc/style.css" />
+    <link rel="stylesheet" href="../../VCv2/style/acts/acts.css" />
+    <!--endbuild-->
+    <title>打卡记录</title>
+</head>
+
+<body class="page-acts punch-card">
+    <!-- MainBD -->
+    <div class="ui-tab card-tag">
+        <ul class="ui-tab-nav ui-border-b">
+            <li class="current">签到25人</li>
+            <li>签退12人</li>
+        </ul>
+        <ul class="ui-tab-content" style="width:300%">
+
+            <!-- 页面一 -->
+            <li class="page1 current">
+                <div class="card-table">
+                    <!-- 表头 -->
+                    <table class="header">
+                        <tr>
+                            <td>志愿者</td>
+                            <td>打卡时间</td>
+                            <td>打卡人</td>
+                        </tr>
+                    </table>
+                    <div class="scroll">
+                        <table>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 页面二 -->
+            <li class="page2">
+                <div class="card-table">
+                    <table class="header">
+                        <tr>
+                            <td>志愿者</td>
+                            <td>打卡时间</td>
+                            <td>打卡人</td>
+                        </tr>
+                    </table>
+                    <div class="scroll">
+                        <table>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                            <tr>
+                                <td>Lucky</td>
+                                <td>2015.12.16 10:15</td>
+                                <td>Lucky</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- Import Scripts -->
+    <script src="../../dist/js/zepto.min.js"></script>
+    <script src="../../dist/js/frozen.min.js"></script>
+    <script>
+    // 选项卡
+    window.addEventListener('load', function() {
+        var tab = new fz.Scroll('.ui-tab', {
+            role: 'tab'
+        });
+    })
+    </script>
+</body>
+
+</html>

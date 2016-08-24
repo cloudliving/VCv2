@@ -1,0 +1,47 @@
+.hel-stars {
+    background-color: #efeff4;
+}
+.hel-stars .content {
+    margin-top: 15px;
+
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fff;
+}
+.hel-stars .title {
+    font-size: 15px;
+
+    padding: 15px 10px;
+
+    color: #000;
+    border-bottom: 1px solid #e5e5e5;
+}
+.hel-stars .main {
+    font-size: 13px;
+
+    padding: 15px 10px 15px 10px;
+
+    color: #666;
+}
+.hel-stars .main p {
+    line-height: 23px;
+    margin-bottom: 5px;
+}
+.hel-stars .main p span:nth-child(6),
+.hel-stars .main p span:nth-child(7) {
+    display: inline-block;
+
+    margin-left: 30px;
+}
+.hel-stars .remark {
+    padding: 15px 10px;
+
+    color: #999;
+}
+.hel-stars .remark p:nth-child(1) {
+    font-size: 12px;
+    line-height: 22px;
+}
+.hel-stars .remark p:nth-child(2) {
+    font-size: 11px;
+    line-height: 21px;
+}

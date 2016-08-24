@@ -1,0 +1,113 @@
+html .ran-peo {
+    width: 100%;
+    height: 100%;
+
+    background-color: #f0eff5;
+}
+.ran-peo .header {
+    line-height: .4rem;
+
+    width: 100%;
+    height: .4rem;
+
+    text-align: center;
+
+    background-color: #fff;
+}
+.ran-peo .header span {
+    font-size: .15rem;
+
+    color: #1b1b1b;
+}
+.ran-peo .header .arr {
+    position: relative;
+    top: .02rem;
+
+    display: inline-block;
+
+    width: 0;
+
+    border-style: solid;
+}
+.ran-peo .header .left {
+    margin-right: .18rem;
+
+    border-width: .08rem .12rem .08rem 0;
+    border-color: transparent #0faffa transparent transparent;
+}
+.ran-peo .header .right {
+    margin-left: .18rem;
+
+    border-width: .08rem 0 .08rem .12rem;
+    border-color: transparent transparent transparent #0faffa;
+}
+.ran-peo .block {
+    margin: .08rem 0;
+}
+.ran-peo .block .top {
+    margin-top: .08rem;
+    padding-left: .1rem;
+
+    background-color: #fff;
+}
+.ran-peo .block .top a {
+    display: block;
+
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: .5rem;
+}
+.ran-peo .block .top a {
+    border-bottom: 1px solid #dedfe0;
+}
+.ran-peo .block .top a:last-child {
+    border-bottom: none;
+}
+.ran-peo .block .top a .ava {
+    float: left;
+
+    width: .35rem;
+    height: .35rem;
+    margin: .075rem 0 0 0;
+
+    border-radius: 50%;
+}
+.ran-peo .block .top a p {
+    float: left;
+
+    margin: .07rem 0 0 .14rem;
+}
+.ran-peo .block .top a p span {
+    display: block;
+
+    color: #313136;
+}
+.ran-peo .block .top a p span:first-child {
+    font-size: .13rem;
+}
+.ran-peo .block .top a p span:last-child {
+    font-size: .11rem;
+}
+.ran-peo .block .top a .pri {
+    position: relative;
+
+    float: right;
+
+    width: .29rem;
+    height: .36rem;
+    margin: .07rem .09rem 0 0;
+}
+.ran-peo .block .top a .pri img {
+    width: 100%;
+    height: 100%;
+}
+.ran-peo .block .top a .pri i {
+    font-size: .07rem;
+
+    position: absolute;
+    top: .09rem;
+    left: .06rem;
+
+    color: #fff;
+}

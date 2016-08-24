@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no, email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Import Flexible Script(High Priority) -->
+    <script src="../../dist/js/Flexible.js"></script>
+    <!-- Import Stylesheets -->
+    <link rel="stylesheet" href="../../dist/css/frozen.min.css">
+    <!-- build:css -->
+    <link rel="stylesheet" href="../../VCv2/icovc/style.css">
+    <link rel="stylesheet" href="../../VCv2/style/point/ex-goods.css">
+    <!-- endbuild -->
+    <title>兑换信息</title>
+</head>
+
+<body class="poi-ex-goods">
+    <!-- MainBD -->
+    <div class="contain">
+        <form method="post" action="">
+            <div class="info-input">
+                <input class="name" type="text" placeholder="输入你的姓名">
+                <input class="phonenum" type="text" placeholder="输入你的手机号">
+                <input class="address" type="text" placeholder="输入你的详细地址">
+            </div>
+            <div class="tips">
+                <p>1、实物派送时需要按照以上信息来联系你，为保证正常送达，请确保你输入的<span>信息真实有效<span>。</p>
+                <p>2、积分兑换后，会尽快为你办理，一般15天内安排发货，请耐心等待。</p>
+                <p>3、如果没有点击“提交兑换信息”按钮，则本次兑换没有完成，不会扣除你的积分。</p>
+            </div>
+            <div class="submit">
+                <input type="submit" value="提交兑换信息">
+            </div>
+        </form>
+    </div>
+
+    <!-- Import Scripts -->
+    <script src="../../dist/js/zepto.min.js"></script>
+    <script src="../../dist/js/frozen.min.js"></script>
+    <script>
+        function check() {
+            var Name = $('.name').val();
+            var PhoneNum = $('.phonenum').val();
+            var Address = $('.address').val();
+            if(Name != "" && PhoneNum!="" && Address !="") {
+                $('.submit input').css('backgroundColor','#fd8362');
+            }else {
+                $('.submit input').css('backgroundColor','#ccc')
+            }
+        }
+        $('.name').bind('keyup',check);
+        $('.phonenum').bind('keyup',check);
+        $('.address').bind('keyup',check);  
+    </script>
+
+</body>
+</html>

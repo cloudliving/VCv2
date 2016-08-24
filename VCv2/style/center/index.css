@@ -1,0 +1,143 @@
+html .cen-index {
+    width: 100%;
+    height: 100%;
+
+    background-color: #efeff4;
+}
+.cen-index .header {
+    width: 100%;
+    height: .87rem;
+
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fff;
+}
+.cen-index .header .ava {
+    float: left;
+
+    width: .48rem;
+    height: .48rem;
+    margin: .195rem .1rem 0 .15rem;
+}
+.cen-index .header .ava img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+}
+.cen-index .header .info {
+    float: left;
+
+    margin: .24rem 0 0 0;
+}
+.cen-index .header .info p {
+    font-size: 16px;
+}
+.cen-index .header .info .ico-male {
+    font-size: .12rem;
+
+    position: relative;
+    top: .01rem;
+}
+.cen-index .header .info .ico-female {
+    font-size: .12rem;
+
+    position: relative;
+    top: .01rem;
+}
+.cen-index .header .stars {
+    float: right;
+
+    margin: .24rem .15rem 0 0;
+}
+.cen-index .header .stars .ico-star,
+.cen-index .header .stars .ico-nostar {
+    font-size: .12rem;
+}
+.cen-index .header .stars .ico-tip {
+    font-size: .14rem;
+
+    position: relative;
+    top: .01rem;
+
+    margin-left: .02rem;
+}
+.cen-index .header .stars .levels {
+    font-size: 14px;
+
+    margin: .03rem 0 0 0;
+    color: #999;
+}
+.cen-index .block {
+    width: 100%;
+    margin: .12rem 0 0 0;
+
+    /*border-top: 1px solid #d9d9d9;*/
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fff;
+}
+.cen-index .bot {
+    margin-bottom: .15rem;
+}
+.cen-index .block .item {
+    line-height: .46rem;
+
+    display: inline-block;
+
+    width: 100%;
+    height: .46rem;
+
+    color: #000;
+    border-bottom: 1px solid #f9f9f9;
+}
+.cen-index .block .item:last-child {
+    border-bottom: none;
+}
+.cen-index .block .info {
+    float: right;
+}
+.cen-index .block .info .imp {
+    font-size: 16px;
+
+    color: #f7941d;
+}
+.cen-index .block .info .les {
+    font-size: 16px;
+
+    color: #808080;
+}
+.cen-index .block .info span.ico-arrow {
+    font-size: 16px;
+
+    position: relative;
+    top: .01rem;
+
+    margin-right: .1rem;
+    margin-left: 0;
+}
+.cen-index .block .item [class*='ico-'] {
+    font-size: 20px;
+    font-weight: 900;
+
+    position: relative;
+    top: .025rem;
+
+    margin-left: .1rem;
+}
+.cen-index .block .info span {
+    font-size: 13px !important;
+}
+.cen-index .block .info {
+    margin-right: .1rem;
+}
+.cen-index .block .ico-arrow {
+    display: none;
+}
+.cen-index .block span[class^='ico'] {
+    margin-right: 5px;
+}
+.cen-index .block .item .ico-write {
+    font-size: 18px;
+}
+.cen-index .block .item .ico-org {
+    color: rgb(16, 174, 255);
+}
