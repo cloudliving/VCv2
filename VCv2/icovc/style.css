@@ -1,302 +1,154 @@
-@font-face {
-    font-family: 'VCv2';
-    src:    url('VCv2.eot?na438t');
-    src:    url('VCv2.eot?na438t#iefix') format('embedded-opentype'),
-        url('VCv2.ttf?na438t') format('truetype'),
-        url('VCv2.woff?na438t') format('woff'),
-        url('VCv2.svg?na438t#VCv2') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+@font-face {font-family: 'VCv2'; font-weight: normal; font-style: normal;src: url('VCv2.eot?na438t'); src: url('VCv2.eot?na438t#iefix') format('embedded-opentype'),
+ url('VCv2.ttf?na438t') format('truetype'),
+ url('VCv2.woff?na438t') format('woff'),
+ url('VCv2.svg?na438t#VCv2') format('svg'); }
 
-[class^="ico-"], [class*=" ico-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'VCv2' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+[class^='ico-'],
+[class*=' ico-'] {/* use !important to prevent issues with browser extensions that change fonts */
+ font-family: 'VCv2' !important; font-weight: normal; font-style: normal; font-variant: normal; line-height: 1;text-transform: none; speak: none; 
+ /* Better Font Rendering =========== */
+ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.ico-iacts:before {
-    content: "\e928";
-}
-.ico-nostar:before {
-    content: "\e900";
-}
-.ico-star:before {
-    content: "\e927";
-}
-.ico-act:before {
-    content: "\e901";
-}
-.ico-add:before {
-    content: "\e902";
-}
-.ico-arrow:before {
-    content: "\e903";
-}
-.ico-blank:before {
-    content: "\e904";
-}
-.ico-card:before {
-    content: "\e905";
-}
-.ico-checked:before {
-    content: "\e906";
-}
-.ico-sec:before {
-    content: "\e907";
-}
-.ico-coin:before {
-    content: "\e908";
-}
-.ico-comment:before {
-    content: "\e909";
-}
-.ico-down:before {
-    content: "\e90a";
-}
-.ico-female:before {
-    content: "\e90b";
-}
-.ico-file:before {
-    content: "\e90c";
-}
-.ico-gift:before {
-    content: "\e90d";
-}
-.ico-org:before {
-    content: "\e90e";
-}
-.ico-ques:before {
-    content: "\e90f";
-}
-.ico-iheart:before {
-    content: "\e910";
-}
-.ico-iorgs:before {
-    content: "\e911";
-}
-.ico-ipeo:before {
-    content: "\e912";
-}
-.ico-iproject:before {
-    content: "\e913";
-}
-.ico-irank:before {
-    content: "\e914";
-}
-.ico-iscan:before {
-    content: "\e915";
-}
-.ico-ishop:before {
-    content: "\e916";
-}
-.ico-like:before {
-    content: "\e917";
-}
-.ico-like-o:before {
-    content: "\e918";
-}
-.ico-heart:before {
-    content: "\e919";
-}
-.ico-male:before {
-    content: "\e91a";
-}
-.ico-pig:before {
-    content: "\e91b";
-}
-.ico-position:before {
-    content: "\e91c";
-}
-.ico-qr:before {
-    content: "\e91d";
-}
-.ico-search:before {
-    content: "\e91e";
-}
-.ico-setting:before {
-    content: "\e91f";
-}
-.ico-share:before {
-    content: "\e920";
-}
-.ico-shop:before {
-    content: "\e921";
-}
-.ico-time:before {
-    content: "\e922";
-}
-.ico-tip:before {
-    content: "\e923";
-}
-.ico-up:before {
-    content: "\e924";
-}
-.ico-verify:before {
-    content: "\e925";
-}
-.ico-write:before {
-    content: "\e926";
-}
-.ico-male-o:before {
-    content: "\e929";
-}
-.ico-time-o:before {
-    content: "\e92a"
-}
+.ico-iacts:before {content: '\e928';}
+.ico-nostar:before {content: '\e900';}
+.ico-star:before {content: '\e927';}
+.ico-act:before {content: '\e901';}
+.ico-add:before {content: '\e902';}
+.ico-arrow:before {content: '\e903';}
+.ico-blank:before {content: '\e904';}
+.ico-card:before {content: '\e905';}
+.ico-checked:before {content: '\e906';}
+.ico-sec:before {content: '\e907';}
+.ico-coin:before {content: '\e908';}
+.ico-comment:before {content: '\e909';}
+.ico-down:before {content: '\e90a';}
+.ico-female:before {content: '\e90b';}
+.ico-file:before {content: '\e90c';}
+.ico-gift:before {content: '\e90d';}
+.ico-org:before {content: '\e90e';}
+.ico-ques:before {content: '\e90f';}
+.ico-iheart:before {content: '\e910';}
+.ico-iorgs:before {content: '\e911';}
+.ico-ipeo:before {content: '\e912';}
+.ico-iproject:before {content: '\e913';}
+.ico-irank:before {content: '\e914';}
+.ico-iscan:before {content: '\e915';}
+.ico-ishop:before {content: '\e916';}
+.ico-like:before {content: '\e917';}
+.ico-like-o:before {content: '\e918';}
+.ico-heart:before {content: '\e919';}
+.ico-male:before {content: '\e91a';}
+.ico-pig:before {content: '\e91b';}
+.ico-position:before {content: '\e91c';}
+.ico-qr:before {content: '\e91d';}
+.ico-search:before {content: '\e91e';}
+.ico-setting:before {content: '\e91f';}
+.ico-share:before {content: '\e920';}
+.ico-shop:before {content: '\e921';}
+.ico-time:before {content: '\e922';}
+.ico-tip:before {content: '\e923';}
+.ico-up:before {content: '\e924';}
+.ico-verify:before {content: '\e925';}
+.ico-write:before {content: '\e926';}
+.ico-male-o:before {content: '\e929';}
+.ico-time-o:before {content: '\e92a';}
 
 
 
-.ico-comment {
-    color: rgb(16, 174, 255);
-}
+.ico-comment {color: rgb(16, 174, 255);}
 
-.ico-down {
-    color: rgb(9, 187, 7);
-}
+.ico-down {color: rgb(9, 187, 7);}
 
-.ico-gift {
-    color: rgb(16, 174, 255);
-}
+.ico-gift {color: rgb(16, 174, 255);}
 
-.ico-write {
-    color: rgb(250, 81, 81);
-}
+.ico-write {color: rgb(250, 81, 81);}
 
-.ico-female {
-    color: rgb(236, 115, 86);
-}
+.ico-female {color: rgb(236, 115, 86);}
 
-.ico-org {
-    color: rgb(250, 81, 81);
-}
+.ico-org {color: rgb(250, 81, 81);}
 
-.ico-ques {
-    color: rgb(16, 174, 255);
-}
+.ico-ques {color: rgb(16, 174, 255);}
 
-.ico-verify {
-    color: rgb(16, 174, 255);
-}
+.ico-verify {color: rgb(16, 174, 255);}
 
-.ico-add {
-    color: rgb(16, 174, 255);
-}
+.ico-add {color: rgb(16, 174, 255);}
 
-.ico-heart {
-    color: rgb(255, 157, 70);
-}
+.ico-heart {color: rgb(255, 157, 70);}
 
-.ico-male {
-    color: rgb(87, 155, 237);
-}
+.ico-male {color: rgb(87, 155, 237);}
 
-.ico-card {
-    color: rgb(255, 204, 0);
-}
+.ico-card {color: rgb(255, 204, 0);}
 
-.ico-pig {
-    color: rgb(16, 174, 255);
-}
+.ico-pig {color: rgb(16, 174, 255);}
 
-.ico-qr {
-    color: rgb(166, 166, 166);
-}
+.ico-qr {color: rgb(166, 166, 166);}
 
-.ico-tip {
-    color: rgb(166, 166, 166);
-}
+.ico-tip {color: rgb(166, 166, 166);}
 
-.ico-file {
-    color: rgb(255, 201, 11);
-}
+.ico-file {color: rgb(255, 201, 11);}
 
-.ico-shop {
-    color: rgb(250, 81, 81);
-}
+.ico-shop {color: rgb(250, 81, 81);}
 
-.ico-nostar {
-    color: rgb(255, 204, 0);
-}
+.ico-nostar {color: rgb(255, 204, 0);}
 
-.ico-star {
-    color: rgb(255, 204, 0);
-}
+.ico-star {color: rgb(255, 204, 0);}
 
-.ico-time {
-    color: rgb(16, 174, 255);
-}
+.ico-time {color: rgb(16, 174, 255);}
 
-.ico-up {
-    color: rgb(250, 81, 81);
-}
+.ico-up {color: rgb(250, 81, 81);}
 
-.ico-share {
-    color: rgb(85, 186, 140);
-}
+.ico-share {color: rgb(85, 186, 140);}
 
-.ico-sec {
-    color: rgb(239, 127, 97);
-}
+.ico-sec {color: rgb(239, 127, 97);}
 
-.ico-position {
-    color: rgb(85, 186, 140);
-}
+.ico-position {color: rgb(85, 186, 140);}
 
-.ico-search {
-    color: rgb(146, 146, 152);
-}
+.ico-search {color: rgb(146, 146, 152);}
 
-.ico-level {
-    color: rgb(239, 127, 97);
-}
+.ico-level {color: rgb(239, 127, 97);}
 
-.ico-nolevel {
-    color: rgb(239, 127, 97);
-}
+.ico-nolevel {color: rgb(239, 127, 97);}
 
-.ico-act {
-    color: rgb(255, 204, 0);
-}
+.ico-act {color: rgb(255, 204, 0);}
 
-.ico-setting {
-    color: rgb(16, 174, 255);
-}
+.ico-setting {color: rgb(16, 174, 255);}
 
-.ico-arrow {
-    color: rgb(179, 185, 190);
-}
+.ico-arrow {color: rgb(179, 185, 190);}
 
-.ico-blank {
-    color: rgb(204, 204, 204);
-}
+.ico-blank {color: rgb(204, 204, 204);}
 
-.ico-checked {
-    color: rgb(56, 211, 150);
-}
+.ico-checked {color: rgb(56, 211, 150);}
 
-.ico-coin {
-    color: rgb(255, 157, 70);
-}
+.ico-coin {color: rgb(255, 157, 70);}
 
 .ico-ipeo,
-.ico-iscan {
-    color: rgb(115, 111, 113);
-}
+.ico-iscan {color: rgb(115, 111, 113);}
 .ico-iacts,
 .ico-iheart,
 .ico-iorgs,
 .ico-iproject,
 .ico-irank,
-.ico-ishop {
-    color: rgb(238, 127, 96);
-}
+.ico-ishop {color: rgb(238, 127, 96);}
+
+
+
+@font-face {font-family: 'icomoon1'; font-weight: normal; font-style: normal;src: url('icomoon1.eot?chcl2r'); src: url('icomoon1.eot?chcl2r#iefix') format('embedded-opentype'),
+ url('icomoon1.ttf?chcl2r') format('truetype'),
+ url('icomoon1.woff?chcl2r') format('woff'),
+ url('icomoon1.svg?chcl2r#icomoon1') format('svg'); }
+
+[class^='icon1-'],
+[class*=' icon1-'] {/* use !important to prevent issues with browser extensions that change fonts */
+ font-family: 'icomoon1' !important; font-weight: normal; font-style: normal; font-variant: normal; line-height: 1;text-transform: none; speak: none; 
+ /* Better Font Rendering =========== */
+ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+
+.icon1-wheel .path1:before {color: rgb(38, 37, 53);content: '\e900'; }
+.icon1-wheel .path2:before {margin-left: -1em; color: rgb(39, 38, 54);content: '\e901'; }
+.icon1-exchange:before {content: '\e902';}
+.icon1-horn:before {content: '\e903';}
+.icon1-name:before {content: '\e904';}
+.icon1-points .path1:before {color: rgb(39, 38, 54);content: '\e905'; }
+.icon1-points .path2:before {margin-left: -1em; color: rgb(38, 37, 53);content: '\e906'; }
+.icon1-rule:before {content: '\e907';}
+.icon1-tel:before {content: '\e908';}

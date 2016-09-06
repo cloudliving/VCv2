@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no, email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Import Flexible Script(High Priority) -->
+    <script src="../../dist/js/Flexible.js"></script>
+    <!-- Import Stylesheets -->
+    <link rel="stylesheet" href="../../dist/css/frozen.min.css">
+    <!-- build:css -->
+    <link rel="stylesheet" href="../../VCv2/icovc/style.css">
+    <link rel="stylesheet" href="../../VCv2/style/point/order.css">
+    <!-- endbuild -->
+    <title>下单</title>
+</head>
+
+<body class="poi-order">
+    <!-- MainBD -->
+    <p class="title">收货人</p>
+    <div class="receiver">
+        <div class="group ui-border-b">
+            <label>姓名</label>
+            <input type="text" placeholder="请输入姓名">
+            <span class=" icon1-name"></span>
+        </div>
+        <div class="group">
+            <label>联系方式</label>
+            <input type="text" placeholder="请输入联系方式">
+            <span class="icon1-tel"></span>
+        </div>
+    </div>
+    <p class="title">商品信息</p>
+    <div class="goods-list">
+        <div class="item">
+            <div class="show">
+                <img src="../../VCv2/img/vcpic16.png">
+            </div>
+            <div class="info">
+                <p>免费洗车券</p>
+                <p>商品价值：￥30</p>
+                <p>抵扣积分：10000</p>
+                <p>应付金额：<span class="cash">￥20</span><span class="number">×1</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="tips">
+        <p>下单支付成功后才会扣除积分，一旦扣除不再返还</p>
+        <p>服务热线：<span>400800832</span></p>   
+    </div> 
+    <div class="footer ui-border-t">
+        <p><span class="total">合计：</span><span>10000</span>积分+<span>20</span>元</p>
+        <a href="###" class="pay">立即支付</a>
+    </div>
+    <!-- Import Scripts -->
+    <script src="../../dist/js/zepto.min.js"></script>
+    <script src="../../dist/js/frozen.min.js"></script>
+</body>
+
+</html>

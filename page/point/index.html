@@ -10,6 +10,7 @@
     <!-- Import Stylesheets -->
     <link rel="stylesheet" href="../../dist/css/frozen.min.css">
     <!-- build:css -->
+    <!-- <link rel="stylesheet" href="../../VCv2/icovc/icomoon1.ttf"> -->
     <link rel="stylesheet" href="../../VCv2/icovc/style.css">
     <link rel="stylesheet" href="../../VCv2/style/point/index.css">
     <!-- endbuild -->
@@ -20,8 +21,19 @@
     <!-- MainBD -->
     <div class="contain">
         <div class="head">
-            <div class="banner">
-                <img src="../../VCv2/img/vcpic1.png">
+            <div class="ui-slider">
+                <ul class="ui-slider-content">
+                    <li>
+                        <a href="###">
+                            <img src="../../VCv2/img/vcpic1.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="###">
+                            <img src="../../VCv2/img/vcpic1.png">
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="head-bar clearfix">
                 <a href="record.html" class="record">
@@ -37,7 +49,41 @@
                     <p>积分规则</p>
                 </a>
             </div>
-            <div class="blank"></div>
+        </div>
+        <div class="lottery-wrap">
+            <div class="lottery clearfix">
+                <a href="###">
+                    <div class="icon">
+                        <span class="icon1-points">
+                            <span class="path1"></span>
+                            <span class="path2"></span>
+                        </span>
+                    </div>
+                    <div class="describe">
+                        <p>积分翻倍</p>
+                        <p>好机会</p>
+                    </div>
+                </a>
+                <a href="###">
+                    <div class="icon">
+                        <span class="icon1-wheel">
+                            <span class="path1"></span>
+                            <span class="path2"></span>
+                        </span>
+                    </div>
+                    <div class="describe">
+                        <p>幸运大转盘</p>
+                        <p>本期大奖</p>
+                    </div>
+                </a>
+            </div>
+            <div class="moving">
+                <img src="../../VCv2/img/lucky.png" class="lucky">
+                <p>
+                    <span class="icon1-horn"></span>
+                    恭喜<span class="user-name">DaSaBi</span>抽中了一部相机
+                </p>
+            </div>
         </div>
         <div class="content">
             <p class="title">积分好礼</p>
@@ -47,8 +93,8 @@
                     <div class="gift-info">
                         <p>免费洗车券免费洗车券</p>
                         <p class="coin-num">
-                            <span class="ico-coin"></span>
-                            <span>3000</span>
+                            <span>10000</span>
+                            <span>积分</span>
                         </p>
                     </div>
                 </a>
@@ -57,8 +103,8 @@
                     <div class="gift-info">
                         <p>莹澈面膜莹澈面膜</p>
                         <p class="coin-num">
-                            <span class="ico-coin"></span>
-                            <span>3000</span>
+                            <span>10000</span>
+                            <span>积分</span>
                         </p>
                     </div>
                 </a>
@@ -67,8 +113,8 @@
                     <div class="gift-info">
                         <p>100元手机充值100元手机充值</p>
                         <p class="coin-num">
-                            <span class="ico-coin"></span>
-                            <span>30000</span>
+                            <span>10000</span>
+                            <span>积分</span>
                         </p>
                     </div>
                 </a>
@@ -77,8 +123,8 @@
                     <div class="gift-info">
                         <p>50元手机充值50元手机充值</p>
                         <p class="coin-num">
-                            <span class="ico-coin"></span>
-                            <span>15000</span>
+                            <span>10000</span>
+                            <span>积分</span>
                         </p>
                     </div>
                 </a>
@@ -88,6 +134,17 @@
     <!-- Import Scripts -->
     <script src="../../dist/js/zepto.min.js"></script>
     <script src="../../dist/js/frozen.min.js"></script>
+    <script>
+        (function() {
+            var slider = new fz.Scroll('.ui-slider', {
+                role: 'slider',
+                indicator: true,
+                autoplay: true,
+                interval: 3000,
+                duration: 800
+            });
+        })();
+    </script>
 </body>
 
 </html>

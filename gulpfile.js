@@ -6,8 +6,9 @@ var build = require('gulp-html-replace');
 
 //合并压缩CSS文件
 gulp.task('concat', function() {
-    gulp.src(['./VCv2/style/**/*.css', './VCv2/icovc/style.css'])
-        .pipe(concat('vc.min.css'))
+    gulp.src(['./VCv2/style/**/*.css', './VCv2/icovc/*.css'])
+        .pipe(concat('vc.min.0906.css'))
+        .pipe(replace('../../img', '../img'))
         .pipe(mini({
             advanced: false,
             keepBreaks: false
@@ -17,7 +18,7 @@ gulp.task('concat', function() {
 
 //转移iconfont文件
 gulp.task('moveicon', function() {
-    gulp.src('./VCv2/icovc/VCv2.ttf')
+    gulp.src('./VCv2/icovc/*.ttf')
         .pipe(gulp.dest('./build/VCv2/style/'))
 });
 
@@ -42,7 +43,7 @@ gulp.task('replace', function() {
 
             // 'css': '../VCv2/style/vc.min.css'
             // 线上地址
-            'css':'http://cloudliving-img.b0.upaiyun.com/static/Home/VCv2/style/vc.min.css'
+            'css':'http://cloudliving-img.b0.upaiyun.com/static/Home/VCv2/style/vc.min.0906.css'
         }))
         .pipe(gulp.dest('build/'));
 });

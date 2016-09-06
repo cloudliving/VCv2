@@ -1,78 +1,63 @@
 .poi-goods-detail {
-    background-color: #efeff4;
+    background-color: #f5f5f5;
 }
 .poi-goods-detail input {
             appearance: none;
     -webkit-appearance: none;
 }
-.poi-goods-detail .contain {
-    padding-bottom: 15px;
-}
 .poi-goods-detail .banner {
     display: block;
-
     width: 100%;
-    height: 1.15rem;
+    height: auto;
 }
 .poi-goods-detail .info {
-    position: relative;
-
-    padding: 15px 10px;
-
-
+    padding: 0.17rem 0.12rem;
     background-color: #fff;
 }
 .poi-goods-detail .info p:nth-child(1) {
-    font-size: 14px;
-
-    margin-bottom: 4px;
-
+    font-size: 0.16rem;
+    color: #000;
+}
+.poi-goods-detail .info p:nth-child(2) {
+    margin-top: 0.02rem;
+    font-size: 0.12rem;
     color: #333;
 }
-.poi-goods-detail .ico-coin {
-    font-size: 16px;
-    line-height: 16px;
-    margin-right: 5px;
+.poi-goods-detail .info p:nth-child(3) {
+    margin-top: 0.02rem;
+    font-size: 0.11rem;
+    color: #666;
 }
-.poi-goods-detail .info p span:nth-child(2) {
-    font-size: 12px;
-
-    color: #999;
-}
-.poi-goods-detail .exbtn {
-    font-size: 12px;
-
-    position: absolute;
-    right: 10px;
-    bottom: 15px;
-
-    width: 100px;
-    height: 30px;
-
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    background-color: #fd8362;
+.poi-goods-detail .info p span {
+    font-size: 0.15rem;
+    color: #ec6833;
 }
 .poi-goods-detail .common {
-    margin-top: 10px;
-
+    margin-top: 0.1rem;
+    padding: 0.1rem 0.12rem;
     background-color: #fff;
 }
 .poi-goods-detail .title {
-    font-size: 16px;
-
-    padding:  10px;
-
+    position: relative;
+    padding-left: 0.1rem;
+    font-size: 0.14rem;
     color: #000;
-
+    margin-bottom: 0.05rem;
+}
+.poi-goods-detail .title:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -0.07rem;
+    content: '';
+    width: 0.02rem;
+    height: 0.13rem;
+    background-color: #fd8362;
+    border-radius: 0.01rem;
 }
 .poi-goods-detail .main {
-    font-size: 14px;
-    line-height: 22px;
-
-    padding: 15px 10px;
-
+    font-size: 0.12rem;
+    line-height: 1.8em;
     color: #666;
 }
 .poi-goods-detail .introduce .main p {
@@ -81,7 +66,20 @@
 }
 .poi-goods-detail .introduce .main p a {
     color: #ff9d46;
-
+}
+.poi-goods-detail .exchange {
+    padding: 0.08rem;
+    background-color: #fff;
+    text-align: center;
+}
+.poi-goods-detail .exchange input {
+    width: 1.9rem;
+    height: 0.34rem;
+    border: none;
+    background-color: #ec6833;
+    border-radius: 0.17rem;
+    font-size: 0.14rem;
+    color: #fff;
 }
 .poi-goods-detail .overlayer {
     position: absolute;

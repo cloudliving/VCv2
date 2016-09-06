@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no, email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Import Flexible Script(High Priority) -->
+    <script src="../../dist/js/Flexible.js"></script>
+    <!-- Import Stylesheets -->
+    <link rel="stylesheet" href="../../dist/css/frozen.min.css">
+    <!-- build:css -->
+    <link rel="stylesheet" href="../../VCv2/style/push/lottery.css">
+    <!-- endbuild -->
+    <title>积分抽奖</title>
+    <style>
+        /*        button.disabled {
+                    pointer-events: auto;
+                }*/
+    </style>
+</head>
+
+<body class="pus-lottery">
+    
+    <img class="banner" src="../../VCv2/img/lottery-1.png" alt="">    
+    
+    <div class="wrap">
+        <div class="ctn">
+            <ul class="prize j-lottery">
+                <!-- data-id 中奖id 与lottery函数的第一个参数对应 -->
+                <li data-id="1" class="item-1"><em>400</em>积分</li>
+                <li data-id="2" class="item-2"><em>200</em>积分</li>
+                <li data-id="3" class="item-3"><em>100</em>积分</li>
+                <li data-id="4" class="item-4">谢谢参与</li>
+                <li data-id="5" class="item-5"><em>400</em>积分</li>
+                <li data-id="6" class="item-6"><em>200</em>积分</li>
+                <li data-id="7" class="item-7"><em>100</em>积分</li>
+                <li data-id="8" class="item-8">谢谢参与</li>
+                <li data-id="9" class="item-9"><em>400</em>积分</li>
+                <li data-id="10" class="item-10"><em>200</em>积分</li>
+                <li data-id="11" class="item-11"><em>100</em>积分</li>
+                <li data-id="12" class="item-12">谢谢参与</li>
+            </ul>
+            <div class="btn">
+                <button class="j-btn">我要抽奖</button>
+                <p class="price">200积分/次</p>
+            </div>
+        </div>
+    </div>
+
+    <p class="hint">中奖积分请于“个人中心”——“公益积分”中查看</p>
+
+    <div class="lucky-wrap">
+        <img src="../../VCv2/img/lottery-2.png">
+        <div class="lucky">
+            <ul class="j-marquee">
+                <li>恭喜<span class="name">胖头鱼</span>抽中<span class="point">1000积分</span></li>
+                <li>恭喜<span class="name">胖头鱼</span>抽中<span class="point">1000积分</span></li>
+                <li>恭喜<span class="name">胖头鱼</span>抽中<span class="point">1000积分</span></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- Import Scripts -->
+    <script src="../../dist/js/zepto.min.js"></script>
+    <script src="../../dist/js/frozen.min.js"></script>
+    <script src="../../VCv2/script/lottery.js"></script>
+    <script>
+        // 滚屏初始化
+        $('.j-btn').on('tap', function(){
+            // 抽奖效果  param1  Number    中奖id、 与中奖元素的data-id属性对应
+            //           param2  Function  回调函数
+
+            // 抽奖时会禁止按钮点击、如不想要该效果、可取消head>style中的注释
+            lottery(5, function(){
+                alert(123)
+                lottery.clear() // 再次抽奖前需调用此函数重置转盘
+            })
+        })
+
+        marquee()
+    </script>
+</body>
+
+</html>

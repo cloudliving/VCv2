@@ -1,16 +1,17 @@
-(function(doc, win) {
-    var docEl = doc.documentElement,
-        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-        reCalc = function() {
-            //根据clientWidth计算根元素大小
-            var clientWidth = docEl.clientWidth;
-            if (!clientWidth) return;
-            docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
+new function (){
+       var _self = this;
+       _self.width = 640;//设置默认最大宽度
+       _self.fontSize = 200;//默认字体大小
+       _self.widthProportion = function(){
+            var p = (document.body&&document.body.clientWidth||document.getElementsByTagName("html")[0].offsetWidth)/_self.width;
+
+            return p<0.5?0.5:p;
         };
 
-    //防止不支持绑定事件
-    if (!doc.addEventListener) return;
-    win.addEventListener(resizeEvt, reCalc, false);
-    doc.addEventListener('DOMContentLoaded', reCalc, false);
+       _self.changePage = function(){
+           document.getElementsByTagName("html")[0].setAttribute("style","font-size:"+_self.widthProportion()*_self.fontSize+"px !important");
+       }
 
-})(document, window);
+       _self.changePage();
+       window.addEventListener("resize",function(){_self.changePage();},false);
+};

@@ -1,0 +1,110 @@
+.pus-lottery body {background: #fff8d1; padding-bottom: .1rem;}
+.pus-lottery .banner {display: block; width: 100%;}
+.pus-lottery .wrap {
+	width: 2.96rem; 
+	height: 2rem;
+	padding: .115rem .08rem;
+	margin: 0 auto 0 auto;
+	background: url(../../img/lottery-bg.png) no-repeat; 
+	background-size: 100% 100%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.pus-lottery .ctn {position: relative; height: 100%; width: 100%; }
+.pus-lottery .prize li {
+	position: absolute;
+	width: .7rem;
+	height: .45rem;
+	line-height: .45rem;
+	text-align: center;
+	background: #ffe990 url(../../img/lottery-bg-2.png) repeat-x;
+	background-position: bottom;
+	color: #d26a03;
+	border-radius: 5px;
+	font-size: .09rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-clip: content-box;
+	padding: 1px;
+}
+.pus-lottery .prize li.active {
+	background-color: #eac943;
+}
+.pus-lottery .prize em {font-size: .18rem;}
+.pus-lottery .prize .item-1 {}
+.pus-lottery .prize .item-2 {top: 0; left: .7rem;}
+.pus-lottery .prize .item-3 {top: 0; left: 1.4rem;}
+.pus-lottery .prize .item-4 {top: 0; left: 2.1rem;}
+.pus-lottery .prize .item-5 {top: .45rem; left: 2.1rem;}
+.pus-lottery .prize .item-6 {top: .9rem; left: 2.1rem;}
+.pus-lottery .prize .item-7 {top: 1.35rem; left: 2.1rem;}
+.pus-lottery .prize .item-8 {top: 1.35rem; left: 1.4rem;}
+.pus-lottery .prize .item-9 {top: 1.35rem; left: .7rem;}
+.pus-lottery .prize .item-10 {top: 1.35rem; left: 0rem;}
+.pus-lottery .prize .item-11 {top: .9rem; left: 0rem;}
+.pus-lottery .prize .item-12 {top: .45rem; left: 0rem;}
+
+.pus-lottery .btn	{
+	position: absolute;
+	left: .7rem;
+	top: .45rem;
+	width: 1.4rem;
+	height: .9rem;
+	background: #ffcd46 url(../../img/lottery-bg-1.png) no-repeat 0 0/100% 100%;
+	border-radius: 5px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-clip: content-box;
+	padding: 1px;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.pus-lottery .btn button {
+	width: .8rem;
+	height: .325rem;
+	border-radius: 5px;
+	font-size: .15rem;
+	text-align: center;
+	line-height: .325rem;
+	margin-top: .25rem;
+	background: #ff5918 url(../../img/lottery-bg-3.png) bottom repeat-x;
+	color: #fff;
+}
+.pus-lottery .btn button:active {
+	background: #ce4c19;
+}
+.pus-lottery .btn button.disabled {
+	background: #ce4c19;
+	pointer-events: none;
+}
+.pus-lottery .btn .price {
+	font-size: .1rem;
+	color: #bd4718;
+}
+.pus-lottery .hint {
+	font-size: .11rem;
+	color: #d26a03;
+	margin-top: .1rem;
+	text-align: center;
+}
+
+.pus-lottery .lucky-wrap {
+	margin-top: .25rem;
+	text-align: center;
+}
+.pus-lottery .lucky-wrap img {
+	width: 2.4rem;
+}
+.pus-lottery .lucky-wrap .lucky {
+	font-size: .12rem;
+	line-height: .2rem;
+	height: .6rem;
+	color: #d26a03;
+	overflow: hidden;
+}
+.pus-lottery .lucky-wrap .name {margin: 0 .05rem;}
+.pus-lottery .lucky-wrap .point {
+	color: #e72626;
+	margin-left: .05rem;
+}
