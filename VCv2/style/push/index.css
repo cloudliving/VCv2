@@ -60,6 +60,14 @@ html .pus-index {
     width: .67rem;
     height: .81rem;
     margin: auto;
+    background: url(../../img/vcpic4-1.png) center/100% no-repeat;
+}
+.pus-index .block .prize .pin.active,
+.pus-index .block .prize .pin:active {
+    background-image: url(../../img/vcpic4.png);
+}
+.pus-index .block .prize .pin.active {
+    pointer-events: none;
 }
 .pus-index .block .goto {
     font-size: .15rem;

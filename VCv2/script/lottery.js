@@ -1,11 +1,13 @@
 // 打卡抽奖
 var rotate = function(){
-	var isAnimation = false
-	var turn = $('.j-rotate-content')
+	var isAnimation = false,
+		turn = $('.j-rotate-content'),
+		btn = $('.j-rotate-btn')
 
 	function animation(index, callback){
 		if ( !isAnimation ) {
 			isAnimation = true
+			btn.addClass('active')
 
 			var angle = (Math.random()-index+5)*60 + 1080
 			console.log(angle)
@@ -23,6 +25,8 @@ var rotate = function(){
 
 	function clear(){
 		isAnimation = false
+		btn.removeClass('active')
+
 		turn.removeClass("transition")
 		turn.css({
 			"-webkit-transform": "rotate(0)",
