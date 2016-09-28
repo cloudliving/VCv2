@@ -132,10 +132,10 @@
 
 
 
-@font-face {font-family: 'icomoon1'; font-weight: normal; font-style: normal;src: url('icomoon1.eot?chcl2r'); src: url('icomoon1.eot?chcl2r#iefix') format('embedded-opentype'),
- url('icomoon1.ttf?chcl2r') format('truetype'),
- url('icomoon1.woff?chcl2r') format('woff'),
- url('icomoon1.svg?chcl2r#icomoon1') format('svg'); }
+@font-face {font-family: 'icomoon1'; font-weight: normal; font-style: normal;src: url('icomoon1.eot?l06tsm'); src: url('icomoon1.eot?l06tsm#iefix') format('embedded-opentype'),
+ url('icomoon1.ttf?l06tsm') format('truetype'),
+ url('icomoon1.woff?l06tsm') format('woff'),
+ url('icomoon1.svg?l06tsm#icomoon1') format('svg'); }
 
 [class^='icon1-'],
 [class*=' icon1-'] {/* use !important to prevent issues with browser extensions that change fonts */
@@ -143,12 +143,13 @@
  /* Better Font Rendering =========== */
  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 
-.icon1-wheel .path1:before {color: rgb(38, 37, 53);content: '\e900'; }
-.icon1-wheel .path2:before {margin-left: -1em; color: rgb(39, 38, 54);content: '\e901'; }
-.icon1-exchange:before {content: '\e902';}
-.icon1-horn:before {content: '\e903';}
-.icon1-name:before {content: '\e904';}
-.icon1-points .path1:before {color: rgb(39, 38, 54);content: '\e905'; }
-.icon1-points .path2:before {margin-left: -1em; color: rgb(38, 37, 53);content: '\e906'; }
-.icon1-rule:before {content: '\e907';}
-.icon1-tel:before {content: '\e908';}
+.icon1-horn:before {content: '\e900';}
+.icon1-lottery:before {content: '\e901';}
+.icon1-name:before {content: '\e902';}
+.icon1-points .path1:before {color: rgb(39, 38, 54);content: '\e903'; }
+.icon1-points .path2:before {margin-left: -1em; color: rgb(38, 37, 53);content: '\e904'; }
+.icon1-rule:before {content: '\e905';}
+.icon1-tel:before {content: '\e906';}
+.icon1-wheel .path1:before {color: rgb(38, 37, 53);content: '\e907'; }
+.icon1-wheel .path2:before {margin-left: -1em; color: rgb(39, 38, 54);content: '\e908'; }
+.icon1-exchange:before {content: '\e909';}

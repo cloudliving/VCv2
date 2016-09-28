@@ -148,6 +148,10 @@ html .peo-point {
     position: relative;
     top: .01rem;
 }
+.peo-point .record .box .icon1-lottery {
+    font-weight: normal;
+    color: rgb(250, 81, 81);
+}
 .peo-point .record .box .type {
     font-size: 15px;
 

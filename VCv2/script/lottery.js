@@ -9,7 +9,7 @@ var rotate = function(){
 			isAnimation = true
 			btn.addClass('active')
 
-			var angle = (Math.random()-index+5)*60 + 1080
+			var angle = (5-index)*60 + 1080 + 30
 			console.log(angle)
 			turn.addClass("transition")
 			turn.css({
