@@ -120,3 +120,15 @@
 	color: #fff;
 	font-size: 0.14rem;
 }
+
+.poi-order .receiver {
+	position: relative;
+}
+.poi-order .gradient-bar {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	background: -webkit-repeating-linear-gradient(-45deg, #10aeff, #10aeff 10px, #fff 10px, #fff 20px, #ec6833 20px, #ec6833 30px, #fff 30px, #fff 40px);
+}

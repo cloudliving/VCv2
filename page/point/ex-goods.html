@@ -24,13 +24,14 @@
                 <input class="name" type="text" placeholder="输入你的姓名">
                 <input class="phonenum" type="text" placeholder="输入你的手机号">
                 <input class="address" type="text" placeholder="输入你的详细地址">
+                <input class="qq" type="text" placeholder="输入你的QQ号">
             </div>
             <div class="tips">
                 <p>1、实物派送时需要按照以上信息来联系你，为保证正常送达，请确保你输入的<span>信息真实有效<span>。</p>
                 <p>2、积分兑换后，会尽快为你办理，一般15天内安排发货，请耐心等待。</p>
                 <p>3、如果没有点击“提交兑换信息”按钮，则本次兑换没有完成，不会扣除你的积分。</p>
             </div>
-            <div class="submit">
+            <div class="submit disabled">
                 <input type="submit" value="提交兑换信息">
             </div>
         </form>
@@ -44,15 +45,17 @@
             var Name = $('.name').val();
             var PhoneNum = $('.phonenum').val();
             var Address = $('.address').val();
-            if(Name != "" && PhoneNum!="" && Address !="") {
-                $('.submit input').css('backgroundColor','#fd8362');
+            var QQ = $('.qq').val();
+            if(Name != "" && PhoneNum!="" && Address !="" && QQ != "") {
+                $('.submit').removeClass('disabled')
             }else {
-                $('.submit input').css('backgroundColor','#ccc')
+                $('.submit').addClass('disabled')
             }
         }
         $('.name').bind('keyup',check);
         $('.phonenum').bind('keyup',check);
         $('.address').bind('keyup',check);  
+        $('.qq').bind('keyup',check);  
     </script>
 
 </body>

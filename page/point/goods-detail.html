@@ -20,7 +20,13 @@
     <!-- MainBD -->
     <div class="contain">
         <div class="head">
-            <img class="banner" src="../../VCv2/img/vcpic16.png">
+            <div class="banner ui-slider">
+                <ul class="ui-slider-content">
+                    <li class="current"><span style="background-image:url(../../VCv2/img/vcpic16.png)"></span></li>
+                    <li><span style="background-image:url(../../VCv2/img/vcpic16.png)"></span></li>
+                    <li><span style="background-image:url(../../VCv2/img/vcpic16.png)"></span></li>
+                </ul>
+            </div>
             <div class="info">
                 <p>免费洗车券</p>
                 <p>
@@ -89,6 +95,16 @@
             //点击取消时执行事件
         })
     });
+
+    // 轮播初始化
+    $(function(){
+        var slider = new fz.Scroll('.ui-slider', {
+            role: 'slider',
+            indicator: true,
+            autoplay: true,
+            interval: 3000
+        })
+    })
     </script>
 </body>
 
